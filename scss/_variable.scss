@@ -1,0 +1,20 @@
+// Components
+
+
+// color
+
+// image path
+$image-path: "../images/";
+
+// For different devices
+$break-point-small: 375px;
+$break-point-medium: 640px;
+$break-point-large: 1200px;
+
+// Mixins
+
+@mixin reset-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
