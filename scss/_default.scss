@@ -1,0 +1,10 @@
+@import "./variable.scss";
+
+// Default style
+body {
+  margin: auto;
+}
+
+ul {
+  @include reset-list;
+}
