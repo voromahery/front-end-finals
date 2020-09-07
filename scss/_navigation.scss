@@ -1,0 +1,39 @@
+@import "./variable.scss";
+
+.navigation_list {
+  background-image: url("#{$image-path}icon_menu.svg");
+  width: 20px;
+  height: 14px;
+  display: block;
+  background-size: cover;
+}
+
+.navigation_list-item {
+  display: none;
+  font-weight: 700;
+}
+
+.navigation_link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+// For desktop
+@media (min-width: $break-point-large) {
+
+  .navigation_list {
+    background-image: none;
+    height: 100%;
+    width: 324px;
+  }
+
+  .navigation_list-item {
+    display: block;
+  }
+
+  .navigation_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  }
