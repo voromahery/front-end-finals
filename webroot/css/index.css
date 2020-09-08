@@ -187,32 +187,56 @@ input::-webkit-input-placeholder {
     max-width: calc(346px + 54px + 170px); } }
 
 footer {
-  background: #FFFFFF;
+  background: #FFFFFF; }
+
+.footer_about,
+.other_works,
+.footer_navigation-list,
+.information {
   padding-inline-start: 14px;
   padding-inline-end: 14px; }
+
+.information,
+.website-information,
+.other_works-link,
+.footer_navigation-list-item .list_item-link {
+  color: rgba(0, 0, 0, 0.5); }
+
+.other_works-list-item,
+.website-information,
+.footer_navigation-list-item .list_item-link
+.information {
+  line-height: 24px; }
+
+.other_works-link,
+.other_works-details,
+.share_link-list {
+  display: flex; }
 
 .footer_about {
   padding-block-start: 76px;
   padding-block-end: 79px; }
 
-.footer_heading {
+.footer_heading,
+.website-information,
+.information {
   margin: 0; }
 
+.footer_title,
+.footer_navigation-list-item .active,
+.other_works-date {
+  color: #000000; }
+
 .footer_title {
-  color: #000000;
   font-size: 24px;
   text-transform: uppercase; }
 
 .website-information {
-  color: rgba(0, 0, 0, 0.5);
-  margin: 0;
   padding-block-start: 22px;
-  padding-block-end: 29px;
-  line-height: 24px; }
+  padding-block-end: 29px; }
 
 .share_link-list {
   max-width: calc(41px + 9px + 18px);
-  display: flex;
   justify-content: space-between;
   align-items: center; }
 
@@ -235,28 +259,28 @@ footer .instagram_icon {
   width: 18px;
   height: 18px; }
 
-.footer_navigation-list-item .list_item-link {
-  color: rgba(0, 0, 0, 0.5);
-  line-height: 24px; }
-
 .footer_navigation-list-item .active {
-  color: #000000;
   font-weight: 700; }
 
 .footer_navigation-list-item:nth-of-type(1) {
   padding-block-end: 23px; }
 
 .other_works {
-  padding-block-start: 78px;
-  padding-block-end: 70px; }
+  padding-block-start: calc(78px - 13px);
+  padding-block-end: calc(70px - 13px); }
 
 .other_works-list-item {
-  display: flex;
-  flex-direction: column;
-  line-height: 24px; }
+  padding-block-end: 13px;
+  padding-block-start: 13px; }
 
-.other_works-link {
-  color: rgba(0, 0, 0, 0.5); }
+.other_works-details {
+  flex-direction: column;
+  padding-inline-start: 31px; }
+
+.other_works-image {
+  max-width: 70px;
+  max-height: 48px;
+  border-radius: 3px; }
 
 .other_works-date {
   font-size: 12px;
@@ -267,5 +291,8 @@ footer .instagram_icon {
   padding-block-start: 27px;
   padding-block-end: 29px; }
 
-.information {
-  color: rgba(0, 0, 0, 0.5); }
+.other_works-link {
+  flex-wrap: wrap; }
+
+.information:nth-of-type(2) {
+  padding-block-start: 7px; }
