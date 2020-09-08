@@ -23,14 +23,6 @@
   text-transform: uppercase;
 }
 
-.show-menu {
-  display: none;
-}
-
-.menu {
-  display: none;
-}
-
 // For desktop
 @media (min-width: $break-point-large) {
   .masthead {
