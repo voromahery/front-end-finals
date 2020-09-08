@@ -1,0 +1,68 @@
+@import "./variable";
+
+// All serif font
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Serif Display"), local("DM_Serif"), local("dm-serif");
+  src: url("#{font-path}/#{dm-serif}_400.woff2");
+  src: url("#{font-path}/#{dm-serif}_400.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Serif Italic"), local("DM_Serif_Italic"), local("dm-serif-italic");
+  src: url("#{font-path}/#{dm-serif}_400_italic.woff2");
+  src: url("#{font-path}/#{dm-serif}_400_italic.woff");
+  font-weight: 400;
+}
+
+// All sans-serif font
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Sans"), local("DM_Sans"), local("dm-sans");
+  src: url("#{font-path}/#{$dm-sans}_400.woff2");
+  src: url("#{font-path}/#{$dm-sans}_400.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Sans Italic"), local("DM_Sans_Italic"), local("dm-sans-italic");
+  src: url("#{font-path}/#{$dm-sans}_400_italic.woff2");
+  src: url("#{font-path}/#{$dm-sans}_400_italic.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Sans Italic"), local("DM_Sans_Italic"), local("dm-sans-italic");
+  src: url("#{font-path}/#{$dm-sans}_500_italic.woff2");
+  src: url("#{font-path}/#{$dm-sans}_500_italic.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Sans Italic"), local("DM_Sans_Italic"), local("dm-sans-italic");
+  src: url("#{font-path}/#{$dm-sans}_500.woff2");
+  src: url("#{font-path}/#{$dm-sans}_500.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Sans Bold"), local("DM_Sans_Bold"), local("dm-sans-bold");
+  src: url("#{font-path}/#{$dm-sans}_700.woff2");
+  src: url("#{font-path}/#{$dm-sans}_700.woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'MyDM';
+  src: local("DM Sans Bold Italic"), local("DM_Sans_Bold_Italic"), local("dm-sans-bold-italic");
+  src: url("#{font-path}/#{$dm-sans}_700_italic.woff2");
+  src: url("#{font-path}/#{$dm-sans}_700_italic.woff");
+  font-weight: 700;
+}
+
