@@ -204,7 +204,7 @@ footer {
 
 .other_works-list-item,
 .website-information,
-.footer_navigation-list-item .list_item-link
+.footer_navigation-list,
 .information {
   line-height: 24px; }
 
@@ -260,7 +260,8 @@ footer .instagram_icon {
   height: 18px; }
 
 .footer_navigation-list-item .active {
-  font-weight: 700; }
+  font-weight: 700;
+  padding-block-end: 20px; }
 
 .footer_navigation-list-item:nth-of-type(1) {
   padding-block-end: 23px; }
@@ -296,3 +297,44 @@ footer .instagram_icon {
 
 .information:nth-of-type(2) {
   padding-block-start: 7px; }
+
+@media (min-width: 1200px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 135px;
+    padding-inline-end: 135px;
+    padding-block-start: 72px;
+    padding-block-end: 75px; }
+  .footer_about,
+  .other_works,
+  .footer_navigation-list,
+  .information {
+    padding-inline-start: 0;
+    padding-inline-end: 0; }
+  .other_works,
+  .footer_about {
+    padding-block-start: 0; }
+  .footer_navigation-list,
+  .other_works {
+    padding-block-end: 79px; }
+  .footer_about {
+    flex-basis: 15%; }
+  .footer_navigation-list {
+    flex-basis: 20%; }
+  .other_works {
+    flex-basis: 25%; }
+  .other_works-list-item:nth-of-type(1) {
+    padding-block-start: 0;
+    padding-block-end: calc(39px / 2); }
+  .other_works-list-item:nth-of-type(2) {
+    padding-block-end: 0;
+    padding-block-start: calc(39px / 2); }
+  .page-information {
+    display: flex;
+    place-content: space-between;
+    flex-basis: 100%; }
+  .information {
+    padding: 0; } }
