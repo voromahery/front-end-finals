@@ -13,3 +13,10 @@ ul {
 a {
   text-decoration: none;
 }
+
+.article_wrapper,
+.masthead,
+footer {
+  margin: auto;
+  max-width: 1440px;
+}
