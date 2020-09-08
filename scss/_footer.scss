@@ -1,9 +1,15 @@
 @import "./variable";
 
   footer {
+    background: #FFFFFF;
     padding-inline-start: 14px;
     padding-inline-end: 14px;
+  }
+
+  .footer_about {
     padding-block-start: 76px;
+    padding-block-end: 79px;
+
   }
 
   .footer_heading {
@@ -18,6 +24,10 @@
 
   .website-information {
    color: rgba(0, 0, 0, 0.5);
+   margin: 0;
+   padding-block-start: 22px;
+   padding-block-end: 29px;
+   line-height: 24px;
  }
 
    .share_link-list {
@@ -27,11 +37,7 @@
     align-items: center;
   }
 
-// .share_link-list-item {
-
-// }
-
-  footer .list_item-link {
+  .share_link-list .list_item-link {
     display: block;
     text-indent: -9999px;
   }
@@ -52,4 +58,59 @@
     background-image: url("#{$image-path}icon_instagram.svg");
     width: 18px;
     height: 18px;
+  }
+
+// Footer nav
+  // .footer_navigation-list {
+
+  // }
+
+  // .footer_navigation-list-item {
+  
+  // }
+
+
+  .footer_navigation-list-item .list_item-link {
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 24px;
+  }
+
+  .footer_navigation-list-item .active {
+    color: #000000;
+    font-weight: 700;
+  }
+
+  .footer_navigation-list-item:nth-of-type(1) {
+    padding-block-end: 23px;
+  }
+
+// Other works styling
+  .other_works {
+    padding-block-start: 78px;
+    padding-block-end: 70px;
+  }
+
+  .other_works-list-item {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+  }
+
+  .other_works-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .other_works-date {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .page-information {
+    border-block-start: 1px solid hsla(0, 0, 0, 0.1);
+    padding-block-start:27px;
+    padding-block-end: 29px;
+  }
+
+  .information {
+    color: rgba(0, 0, 0, 0.5);
   }
