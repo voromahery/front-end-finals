@@ -10,7 +10,6 @@
 }
 
 .show-menu {
-  position: absolute;
   top: -100%;
 }
 
@@ -18,8 +17,12 @@
   position: relative;
 }
 
+.show-menu,
 .navigation_list {
   position: absolute;
+}
+
+.navigation_list {
   top: 0;
   right: 0;
   line-height: 24px;
@@ -86,5 +89,4 @@ body > [type="checkbox"]:checked ~ header .menu {
     flex-direction: row;
     justify-content: space-between;
   }
-
-  }
+}
