@@ -1,15 +1,58 @@
 @import "./variable.scss";
 
-.navigation_list {
+.menu {
   background-image: url("#{$image-path}icon_menu.svg");
   width: 20px;
   height: 14px;
   display: block;
   background-size: cover;
+  text-indent: -9999px;
+}
+
+.show-menu {
+  position: absolute;
+  top: -100%;
+}
+
+.navigation {
+  position: relative;
+}
+
+.navigation_list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 24px;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  padding-block-start: 1rem;
+  padding-block-end: 1rem;
+  background-color: #2b0ba0;
+  border-bottom-left-radius: 24px;
+  transform: translate(12%, -250%);
+  transition: transform 0.2s;
+  max-width: 400px;
+}
+
+body > [type="checkbox"]:checked ~ header .navigation_list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(12%, -35%);
+    transition: transform 0.2s;
+}
+
+body > [type="checkbox"]:checked ~ header .menu {
+  background-image: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(5, 5, 5, 0.5);
+  width: 100vw;
+  height: 100vh;
 }
 
 .navigation_list-item {
-  display: none;
   font-weight: 700;
 }
 
@@ -23,6 +66,15 @@
     background-image: none;
     height: 100%;
     width: 324px;
+    position: unset;
+    max-width: 100%;
+    transform: none;
+    background-color: unset;
+  }
+
+  .show-menu,
+  .menu {
+    display: none;
   }
 
   .navigation_list-item {
