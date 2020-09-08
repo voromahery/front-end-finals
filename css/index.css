@@ -49,14 +49,16 @@ footer {
   text-indent: -9999px; }
 
 .show-menu {
-  position: absolute;
   top: -100%; }
 
 .navigation {
   position: relative; }
 
+.show-menu,
 .navigation_list {
-  position: absolute;
+  position: absolute; }
+
+.navigation_list {
   top: 0;
   right: 0;
   line-height: 24px;
@@ -137,6 +139,10 @@ body > [type="checkbox"]:checked ~ header .menu {
 .image-active {
   max-width: 346px;
   max-height: 215px; }
+
+.not-activated,
+.image-active {
+  border-radius: 5px; }
 
 .not-activated {
   max-width: 137px;
