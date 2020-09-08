@@ -42,6 +42,11 @@
   max-height: 215px;
 }
 
+.not-activated,
+.image-active {
+  border-radius: 5px;
+}
+
 .not-activated {
   max-width: 137px;
   max-height: 85px;
