@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="./css/index.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=DM+Serif+Display:ital@0;1&display=swap"
+    rel="stylesheet">
   <title>Photograf</title>
 </head>
 
@@ -47,19 +50,50 @@
             All my photographs try to capture that perspective, however subtle.
           </p>
         </header>
-        <figure class="details_content-figure">
-          <picture class="details_content-figure-picture">
-            <source srcset="./images/rock_carvings_lg.jpg" class="image-active carved-rock" media="(min-width: 1200px)">
-            <img src="./images/rock_carvings_md.jpg" alt="red-carved-rock" class="image-active carved-rock">
-          </picture>
-          <img src="./images/rock_carvings_sm.jpg" alt="red-carved-rock" class="not-activated">
-          <img src="./images/stairs_sm.jpg" alt="pink-stairs" class="not-activated">
-          <img src="./images/ripples_sm.jpg" alt="sands" class="not-activated">
-          <img src="./images/dunes_sm.jpg" alt="sand-dunes" class="not-activated">
-          <img src="./images/arches_sm.jpg" alt="orange-curtains" class="not-activated">
-          <img src="./images/car_sm.jpg" alt="wheel-of-a-car" class="not-activated">
-          <img src="./images/canyon_sm.jpg" alt="rocky-passage" class="not-activated">
-        </figure>
+        <ul class="details_content-image-list">
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <source srcset="./images/rock_carvings_lg.jpg" class="image-active carved-rock"
+                media="(min-width: 1200px)">
+              <img src="./images/rock_carvings_md.jpg" alt="red-carved-rock" class="image-active carved-rock">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/rock_carvings_sm.jpg" alt="red-carved-rock" class="not-activated">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/stairs_sm.jpg" alt="pink-stairs" class="not-activated">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/ripples_sm.jpg" alt="sands" class="not-activated">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/dunes_sm.jpg" alt="sand-dunes" class="not-activated">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/arches_sm.jpg" alt="orange-curtains" class="not-activated">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/car_sm.jpg" alt="wheel-of-a-car" class="not-activated">
+            </picture>
+          </li>
+          <li class="image_list-item">
+            <picture class="details_content-figure-picture">
+              <img src="./images/canyon_sm.jpg" alt="rocky-passage" class="not-activated">
+            </picture>
+          </li>
+        </ul>
         <ul class="photo_information-list">
           <li class="photo_information-list-item">
             <span class="information_title">Date</span>
@@ -83,7 +117,7 @@
       </article>
       <article class="details_content-summary-article">
         <header class="summary_article-header">
-          <h2 class="summary_article-heading">Mineral carvings</h2>
+          <h3 class="summary_article-heading">Mineral carvings</h3>
           <p class="summary_article-header-paragraph">
             Deep in the deserts of Morroco, lies a dried-up valley, featuring some of the most exquisite rock
             formations,
@@ -111,9 +145,9 @@
     <section class="section_newsletter">
       <article class="newsletter_article">
         <header class="newsletter_article-header">
-          <h3 class="newsletter_article-heading">
+          <h5 class="newsletter_article-heading">
             <a href="/latest" class="article_header-link">Latest</a>
-          </h3>
+          </h5>
           <h2 class="newsletter_article-title">Stay up-to-date with my updates</h2>
         </header>
         <form action="/">
@@ -168,7 +202,7 @@
           <img src="./images/woman_sm.jpg" alt="woman-turning-to the right" class="other_works-image">
           <span class="other_works-details">
             Rust, pumpkin, tans, and spices.
-            <time datetime="2019-70-15" class="other_works-date">July 15, 2019</time>
+            <time datetime="2019-07-15" class="other_works-date">July 15, 2019</time>
           </span>
         </a>
       </li>
