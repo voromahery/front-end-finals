@@ -1,61 +1,65 @@
 @font-face {
-  font-family: 'MyDM';
-  src: local("DM Serif Display"), local("DM_Serif"), local("dm-serif");
-  src: url("font-path/dm-serif_400.woff2");
-  src: url("font-path/dm-serif_400.woff");
+  font-family: 'MyDM-Serif';
+  src: local("DM Serif Regular"), local("DM_Serif_Regular"), local("dm-serif-regular");
+  src: url("../fonts/dm_serif_display_400.woff2");
+  src: url("../fonts/dm_serif_display_400.woff");
   font-weight: 400; }
 
 @font-face {
-  font-family: 'MyDM';
+  font-family: 'MyDM-Serif';
   src: local("DM Serif Italic"), local("DM_Serif_Italic"), local("dm-serif-italic");
-  src: url("font-path/dm-serif_400_italic.woff2");
-  src: url("font-path/dm-serif_400_italic.woff");
+  src: url("../fonts/dm_serif_display_400_italic.woff2");
+  src: url("../fonts/dm_serif_display_400_italic.woff");
+  font-style: italic;
   font-weight: 400; }
 
 @font-face {
-  font-family: 'MyDM';
-  src: local("DM Sans"), local("DM_Sans"), local("dm-sans");
-  src: url("font-path/dm_sans_400.woff2");
-  src: url("font-path/dm_sans_400.woff");
+  font-family: 'MyDM-Sans';
+  src: local("DM Sans Regular"), local("DM_Sans_Regular"), local("dm-sans-regular");
+  src: url("../fonts/dm_sans_400.woff2");
+  src: url("../fonts/dm_sans_400.woff");
   font-weight: 400; }
 
 @font-face {
-  font-family: 'MyDM';
+  font-family: 'MyDM-Sans';
   src: local("DM Sans Italic"), local("DM_Sans_Italic"), local("dm-sans-italic");
-  src: url("font-path/dm_sans_400_italic.woff2");
-  src: url("font-path/dm_sans_400_italic.woff");
+  src: url("../fonts/dm_sans_400_italic.woff2");
+  src: url("../fonts/dm_sans_400_italic.woff");
+  font-style: italic;
   font-weight: 400; }
 
 @font-face {
-  font-family: 'MyDM';
-  src: local("DM Sans Italic"), local("DM_Sans_Italic"), local("dm-sans-italic");
-  src: url("font-path/dm_sans_500_italic.woff2");
-  src: url("font-path/dm_sans_500_italic.woff");
+  font-family: 'MyDM-Sans';
+  src: local("DM Sans Medium Italic"), local("DM_Sans_Medium_Italic"), local("dm-sans-medium-italic");
+  src: url("../fonts/dm_sans_500_italic.woff2");
+  src: url("../fonts/dm_sans_500_italic.woff");
+  font-style: italic;
   font-weight: 500; }
 
 @font-face {
-  font-family: 'MyDM';
-  src: local("DM Sans Italic"), local("DM_Sans_Italic"), local("dm-sans-italic");
-  src: url("font-path/dm_sans_500.woff2");
-  src: url("font-path/dm_sans_500.woff");
+  font-family: 'MyDM-Sans';
+  src: local("DM Sans Medium"), local("DM_Sans_Medium"), local("dm-sans-medium");
+  src: url("../fonts/dm_sans_500.woff2");
+  src: url("../fonts/dm_sans_500.woff");
   font-weight: 500; }
 
 @font-face {
-  font-family: 'MyDM';
+  font-family: 'MyDM-Sans';
   src: local("DM Sans Bold"), local("DM_Sans_Bold"), local("dm-sans-bold");
-  src: url("font-path/dm_sans_700.woff2");
-  src: url("font-path/dm_sans_700.woff");
+  src: url("../fonts/dm_sans_700.woff2");
+  src: url("../fonts/dm_sans_700.woff");
   font-weight: 700; }
 
 @font-face {
-  font-family: 'MyDM';
+  font-family: 'MyDM-Sans';
   src: local("DM Sans Bold Italic"), local("DM_Sans_Bold_Italic"), local("dm-sans-bold-italic");
-  src: url("font-path/dm_sans_700_italic.woff2");
-  src: url("font-path/dm_sans_700_italic.woff");
+  src: url("../fonts/dm_sans_700_italic.woff2");
+  src: url("../fonts/dm_sans_700_italic.woff");
+  font-style: italic;
   font-weight: 700; }
 
 body {
-  font-family: 'MyDM';
+  font-family: 'MyDM-Sans', Arial, Helvetica, sans-serif;
   margin: auto;
   background: rgba(67, 76, 204, 0.05); }
 
@@ -66,6 +70,13 @@ ul {
 
 a {
   text-decoration: none; }
+
+h1,
+h2,
+h3,
+time {
+  font-family: 'MyDM-Serif', serif;
+  font-weight: 400; }
 
 section,
 .masthead,
@@ -88,14 +99,16 @@ footer {
   margin: 0; }
 
 .masthead_heading-title {
-  font-size: 40px;
+  font-size: 24px;
   color: #FFFFFF;
   text-transform: uppercase; }
 
 @media (min-width: 1200px) {
   .masthead {
     padding-inline-start: 135px;
-    padding-inline-end: 135px; } }
+    padding-inline-end: 135px; }
+  .masthead_heading-title {
+    font-size: 40px; } }
 
 .menu {
   background-image: url("../images/icon_menu.svg");
@@ -220,6 +233,9 @@ body > [type="checkbox"]:checked ~ header .menu {
 .information_title {
   color: rgba(0, 0, 0, 0.5); }
 
+.summary_article-heading {
+  font-size: 40px; }
+
 .section_newsletter {
   background: #FFDD78;
   padding-block-start: 63px;
@@ -229,6 +245,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .article_header-link {
   color: #000000;
+  font-size: 16px;
   font-weight: normal;
   text-transform: uppercase; }
 
@@ -405,9 +422,6 @@ footer .instagram_icon {
   border-block-start: 1px solid rgba(0, 0, 0, 0.1);
   padding-block-start: 27px;
   padding-block-end: 29px; }
-
-.other_works-link {
-  flex-wrap: wrap; }
 
 .information:nth-of-type(2) {
   padding-block-start: 7px; }
