@@ -1,9 +1,19 @@
+:root {
+  --common-font-color: rgba(0, 0, 0, 0.5);
+  --padding-inline-desktop: 135px;
+  --padding-inline-mobile: 14px;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+
 @font-face {
   font-family: 'MyDM-Serif';
   src: local("DM Serif Regular"), local("DM_Serif_Regular"), local("dm-serif-regular");
   src: url("../fonts/dm_serif_display_400.woff2");
   src: url("../fonts/dm_serif_display_400.woff");
-  font-weight: 400; }
+  font-weight: var(--font-weight-regular); }
 
 @font-face {
   font-family: 'MyDM-Serif';
@@ -11,14 +21,14 @@
   src: url("../fonts/dm_serif_display_400_italic.woff2");
   src: url("../fonts/dm_serif_display_400_italic.woff");
   font-style: italic;
-  font-weight: 400; }
+  font-weight: var(--font-weight-regular); }
 
 @font-face {
   font-family: 'MyDM-Sans';
   src: local("DM Sans Regular"), local("DM_Sans_Regular"), local("dm-sans-regular");
   src: url("../fonts/dm_sans_400.woff2");
   src: url("../fonts/dm_sans_400.woff");
-  font-weight: 400; }
+  font-weight: var(--font-weight-regular); }
 
 @font-face {
   font-family: 'MyDM-Sans';
@@ -26,7 +36,7 @@
   src: url("../fonts/dm_sans_400_italic.woff2");
   src: url("../fonts/dm_sans_400_italic.woff");
   font-style: italic;
-  font-weight: 400; }
+  font-weight: var(--font-weight-regular); }
 
 @font-face {
   font-family: 'MyDM-Sans';
@@ -34,21 +44,21 @@
   src: url("../fonts/dm_sans_500_italic.woff2");
   src: url("../fonts/dm_sans_500_italic.woff");
   font-style: italic;
-  font-weight: 500; }
+  font-weight: var(--font-weight-medium); }
 
 @font-face {
   font-family: 'MyDM-Sans';
   src: local("DM Sans Medium"), local("DM_Sans_Medium"), local("dm-sans-medium");
   src: url("../fonts/dm_sans_500.woff2");
   src: url("../fonts/dm_sans_500.woff");
-  font-weight: 500; }
+  font-weight: var(--font-weight-medium); }
 
 @font-face {
   font-family: 'MyDM-Sans';
   src: local("DM Sans Bold"), local("DM_Sans_Bold"), local("dm-sans-bold");
   src: url("../fonts/dm_sans_700.woff2");
   src: url("../fonts/dm_sans_700.woff");
-  font-weight: 700; }
+  font-weight: var(--font-weight-bold); }
 
 @font-face {
   font-family: 'MyDM-Sans';
@@ -56,7 +66,7 @@
   src: url("../fonts/dm_sans_700_italic.woff2");
   src: url("../fonts/dm_sans_700_italic.woff");
   font-style: italic;
-  font-weight: 700; }
+  font-weight: var(--font-weight-bold); }
 
 body {
   font-family: 'MyDM-Sans', Arial, Helvetica, sans-serif;
@@ -77,19 +87,19 @@ h2,
 h3,
 time {
   font-family: 'MyDM-Serif', serif;
-  font-weight: 400; }
+  font-weight: var(--font-weight-regular); }
 
 .section_heading {
   display: none; }
 
 section {
-  padding-inline-start: 14px;
-  padding-inline-end: 14px; }
+  padding-inline-start: var(--padding-inline-mobile);
+  padding-inline-end: var(--padding-inline-mobile); }
 
 @media (min-width: 1200px) {
   section {
-    padding-inline-start: 135px;
-    padding-inline-end: 135px; } }
+    padding-inline-start: var(--padding-inline-desktop);
+    padding-inline-end: var(--padding-inline-desktop); } }
 
 .masthead {
   display: flex;
@@ -197,8 +207,8 @@ body > [type="checkbox"]:checked ~ header .menu {
   position: relative; }
 
 .breadcrumb-link {
-  color: rgba(0, 0, 0, 0.5);
-  padding-inline-start: calc(14px + 10px); }
+  color: var(--common-font-color);
+  padding-inline-start: calc(var(--padding-inline-mobile) + 10px); }
 
 .breadcrumb-link::before {
   content: "";
@@ -269,7 +279,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .summary_article-paragraph,
 .information_title {
-  color: rgba(0, 0, 0, 0.5); }
+  color: var(--common-font-color); }
 
 .summary_article-heading,
 .summary_article-header-paragraph,
@@ -398,7 +408,7 @@ footer {
 .website-information,
 .other_works-link,
 .footer_navigation-list-item .list_item-link {
-  color: rgba(0, 0, 0, 0.5); }
+  color: var(--common-font-color); }
 
 .other_works-list-item,
 .website-information,
