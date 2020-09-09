@@ -4,6 +4,7 @@
 body {
   font-family: 'MyDM-Sans', Arial, Helvetica, sans-serif;
   margin: auto;
+  max-width: 1440px;
   background: rgba(67, 76, 204, 0.05);
 }
 
@@ -23,9 +24,6 @@ time {
   font-weight: 400;
 }
 
-section,
-.masthead,
-footer {
-  margin: auto;
-  max-width: 1440px;
+.section_heading {
+  display: none;
 }
