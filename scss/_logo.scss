@@ -1,0 +1,30 @@
+@import "./variable";
+
+.share_link-list {
+  max-width: calc(41px + 9px + 18px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share_link-list .list_item-link {
+  display: block;
+  text-indent: -9999px;
+}
+
+.facebook_icon {
+  background-image: url("#{$image-path}icon_facebook.svg");
+  width: 9px;
+  height: 18px;
+}
+
+.twitter_icon {
+  background-image: url("#{$image-path}icon_twitter.svg");
+  width: 18px;
+  height: 15px;
+}
+
+.instagram_icon {
+  background-image: url("#{$image-path}icon_instagram.svg");
+  width: 18px;
+  height: 18px;
+}
