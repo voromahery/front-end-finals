@@ -281,10 +281,18 @@ figure {
     padding-inline-start: 135px;
     padding-inline-end: 135px; }
   .details_content-heading {
+    font-size: 72px;
     max-width: 457px; }
   .details_content-summary-article {
     grid-column: 2;
     padding-block-start: 0; }
+  .summary_article-heading {
+    line-height: 62px;
+    font-size: 52px; }
+  .summary_article-header-paragraph {
+    padding-block-end: 38px; }
+  .summary_article-paragraph {
+    padding-block-end: 55px; }
   .image-active {
     max-width: 1170px;
     max-height: 728px; }
@@ -294,6 +302,7 @@ figure {
   .photo_information-list {
     max-width: 443px;
     max-height: 152px;
+    align-items: flex-end;
     grid-column: 1; }
   .image_list-item:nth-of-type(5),
   .image_list-item:nth-of-type(6),

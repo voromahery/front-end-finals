@@ -139,12 +139,26 @@
   }
 
   .details_content-heading {
+    font-size: 72px;
     max-width: 457px;
   }
 
   .details_content-summary-article {
     grid-column: 2;
     padding-block-start: 0;
+  }
+
+  .summary_article-heading {
+    line-height: 62px;
+    font-size: 52px;
+  }
+
+  .summary_article-header-paragraph {
+    padding-block-end: 38px;
+  }
+
+  .summary_article-paragraph {
+    padding-block-end: 55px;
   }
 
   .image-active {
@@ -160,6 +174,7 @@
   .photo_information-list {
     max-width: 443px;
     max-height: 152px;
+    align-items: flex-end;
     grid-column: 1;
   }
 
