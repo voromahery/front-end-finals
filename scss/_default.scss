@@ -27,3 +27,15 @@ time {
 .section_heading {
   display: none;
 }
+
+section {
+  padding-inline-start: 14px;
+  padding-inline-end: 14px;
+}
+
+@media (min-width: $break-point-large) {
+  section {
+    padding-inline-start: 135px;
+    padding-inline-end: 135px;
+  }
+}

@@ -4,8 +4,6 @@
   background: #FFDD78;
   padding-block-start: 63px;
   padding-block-end: 54px;
-  padding-inline-start: 14px;
-  padding-inline-end: 14px;
 }
 
 .article_header-link {
@@ -70,8 +68,6 @@ input::-webkit-input-placeholder {
 // For desktop
 @media (min-width: $break-point-large) {
   .section_newsletter {
-    padding-inline-start: 135px;
-    padding-inline-end: 135px;
     padding-block-start: 79px;
     padding-block-end: 104px;
   }
