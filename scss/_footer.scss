@@ -18,7 +18,7 @@
   .website-information,
   .other_works-link,
   .footer_navigation-list-item .list_item-link {
-    color: rgba(0, 0, 0, 0.5);
+    color: $common-font-color;
   }
 
   .other_works-list-item,
@@ -61,35 +61,6 @@
    padding-block-start: 22px;
    padding-block-end: 29px;
  }
-
-   .share_link-list {
-    max-width: calc(41px + 9px + 18px);
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .share_link-list .list_item-link {
-    display: block;
-    text-indent: -9999px;
-  }
-
-  footer .facebook_icon {
-    background-image: url("#{$image-path}icon_facebook.svg");
-    width: 9px;
-    height: 18px;
-  }
-
-  footer .twitter_icon {
-    background-image: url("#{$image-path}icon_twitter.svg");
-    width: 18px;
-    height: 15px;
-  }
-
-  footer .instagram_icon {
-    background-image: url("#{$image-path}icon_instagram.svg");
-    width: 18px;
-    height: 18px;
-  }
 
 // Footer nav
   .footer_navigation-list-item .active {
