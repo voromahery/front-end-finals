@@ -1,13 +1,13 @@
 @import "./variable";
 
   // Common style
-  footer {
+  .site_footer {
     background: #FFFFFF;
   }
 
-  .footer_about,
+  .site_footer-about,
   .other_works,
-  .footer_navigation-list,
+  .site_footer_navigation-list,
   .information
    {
     padding-inline-start: 14px;
@@ -17,13 +17,13 @@
   .information,
   .website-information,
   .other_works-link,
-  .footer_navigation-list-item .list_item-link {
+  .site_footer_navigation-list-item .list_item-link {
     color: $common-font-color;
   }
 
   .other_works-list-item,
   .website-information,
-  .footer_navigation-list,
+  .site_footer_navigation-list,
   .information {
   line-height: 24px;
 }
@@ -34,25 +34,25 @@
     display: flex;
   }
 
-  .footer_about {
+  .site_footer-about {
     padding-block-start: 76px;
     padding-block-end: 79px;
 
   }
 
-  .footer_heading,
+  .site_footer-heading,
   .website-information,
   .information {
     margin: 0;
   }
 
-  .footer_title,
-  .footer_navigation-list-item .active,
+  .site_footer-title,
+  .site_footer_navigation-list-item .active,
   .other_works-date {
     color: #000000;
   }
   
-  .footer_title {
+  .site_footer-title {
     font-size: 24px;
     text-transform: uppercase;
  }
@@ -63,12 +63,12 @@
  }
 
 // Footer nav
-  .footer_navigation-list-item .active {
+  .site_footer_navigation-list-item .active {
     font-weight: 700;
     padding-block-end: 20px;
   }
 
-  .footer_navigation-list-item:nth-of-type(1) {
+  .site_footer_navigation-list-item:nth-of-type(1) {
     padding-block-end: 23px;
   }
 
@@ -112,7 +112,7 @@
   // For desktop
 @media (min-width: $break-point-large) {
 
-  footer {
+  .site_footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -123,9 +123,9 @@
     padding-block-end: 75px;
   }
 
-  .footer_about,
+  .site_footer-about,
   .other_works,
-  .footer_navigation-list,
+  .site_footer_navigation-list,
   .information
    {
     padding-inline-start: 0;
@@ -133,20 +133,20 @@
   }
 
   .other_works,
-  .footer_about {
+  .site_footer-about {
     padding-block-start: 0;
   }
 
-  .footer_navigation-list,
+  .site_footer_navigation-list,
   .other_works {
     padding-block-end: 79px;
   }
 
-  .footer_about {
+  .site_footer-about {
     flex-basis: 25%;
   }
 
-  .footer_navigation-list {
+  .site_footer_navigation-list {
     flex-basis: 20%;
   }
 
