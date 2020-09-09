@@ -230,11 +230,27 @@ body > [type="checkbox"]:checked ~ header .menu {
 .information-detail {
   font-weight: 700; }
 
-.information_title {
-  color: rgba(0, 0, 0, 0.5); }
+.summary_article-heading,
+.summary_article-header-paragraph,
+.summary_article-paragraph {
+  margin: 0; }
 
 .summary_article-heading {
   font-size: 40px; }
+
+.details_content-summary-article {
+  padding-block-start: 75px; }
+
+.summary_article-header-paragraph {
+  padding-block-start: 31px; }
+
+.summary_article-paragraph,
+.summary_article-header-paragraph {
+  padding-block-end: 31px; }
+
+.summary_article-paragraph,
+.information_title {
+  color: rgba(0, 0, 0, 0.5); }
 
 .section_newsletter {
   background: #FFDD78;
@@ -366,30 +382,6 @@ footer {
   padding-block-start: 22px;
   padding-block-end: 29px; }
 
-.share_link-list {
-  max-width: calc(41px + 9px + 18px);
-  justify-content: space-between;
-  align-items: center; }
-
-.share_link-list .list_item-link {
-  display: block;
-  text-indent: -9999px; }
-
-footer .facebook_icon {
-  background-image: url("../images/icon_facebook.svg");
-  width: 9px;
-  height: 18px; }
-
-footer .twitter_icon {
-  background-image: url("../images/icon_twitter.svg");
-  width: 18px;
-  height: 15px; }
-
-footer .instagram_icon {
-  background-image: url("../images/icon_instagram.svg");
-  width: 18px;
-  height: 18px; }
-
 .footer_navigation-list-item .active {
   font-weight: 700;
   padding-block-end: 20px; }
@@ -466,3 +458,27 @@ footer .instagram_icon {
     flex-basis: 100%; }
   .information {
     padding: 0; } }
+
+.share_link-list {
+  max-width: calc(41px + 9px + 18px);
+  justify-content: space-between;
+  align-items: center; }
+
+.share_link-list .list_item-link {
+  display: block;
+  text-indent: -9999px; }
+
+.facebook_icon {
+  background-image: url("../images/icon_facebook.svg");
+  width: 9px;
+  height: 18px; }
+
+.twitter_icon {
+  background-image: url("../images/icon_twitter.svg");
+  width: 18px;
+  height: 15px; }
+
+.instagram_icon {
+  background-image: url("../images/icon_instagram.svg");
+  width: 18px;
+  height: 18px; }

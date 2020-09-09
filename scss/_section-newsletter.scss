@@ -77,8 +77,6 @@ input::-webkit-input-placeholder {
   }
 
   .newsletter_article {
-    // display: grid;
-    // grid-template-columns: repeat(2, 1fr);
     display: flex;
     justify-content: space-between;
   }

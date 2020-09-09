@@ -1,19 +1,11 @@
 @import "./variable";
 
-// .section_details-content {
-
-// }
-
-// .details_content-header {
-  
-// }
-
 .details_content-breadcrumb {
   position: relative;
 }
 
 .breadcrumb-link {
-  color: rgba(0, 0, 0, 0.5);
+  color: $common-font-color;
   padding-inline-start: calc(14px + 10px);
 }
 
@@ -68,12 +60,32 @@
 .information-detail {
   font-weight: 700;
 }
-
-.information_title {
-  color: rgba(0, 0, 0, 0.5);;
+ 
+// Summary
+.summary_article-heading,
+.summary_article-header-paragraph,
+.summary_article-paragraph {
+  margin: 0;
 }
 
-// 
 .summary_article-heading {
   font-size: 40px;
+}
+
+.details_content-summary-article {
+  padding-block-start: 75px;
+}
+
+.summary_article-header-paragraph {
+  padding-block-start: 31px;
+}
+
+.summary_article-paragraph,
+.summary_article-header-paragraph {
+  padding-block-end: 31px;
+}
+
+.summary_article-paragraph,
+.information_title {
+  color: $common-font-color;
 }
