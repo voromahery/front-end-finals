@@ -33,6 +33,14 @@
   color: #FFFFFF;
 }
 
+.navigation_list-item:hover {
+  border-block-end: 1px solid chartreuse;
+}
+
+.navigation_link:hover {
+  color: chartreuse;
+}
+
 .menu {
   background-image: url("#{$image-path}icon_menu.svg");
   width: 20px;

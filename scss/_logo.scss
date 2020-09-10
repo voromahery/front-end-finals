@@ -10,6 +10,11 @@
 .share_link-list .list_item-link {
   display: block;
   text-indent: -9999px;
+  background-repeat: no-repeat;
+}
+
+.share_link-list .list_item-link:hover {
+  opacity: 0.5;
 }
 
 .facebook_icon {
