@@ -10,8 +10,8 @@
   .site_footer_navigation-list,
   .information
    {
-    padding-inline-start: 14px;
-    padding-inline-end: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
   .information,
@@ -35,8 +35,8 @@
   }
 
   .site_footer-about {
-    padding-block-start: 76px;
-    padding-block-end: 79px;
+    padding-top: 76px;
+    padding-bottom: 79px;
 
   }
 
@@ -59,18 +59,18 @@
  }
 
   .website-information {
-   padding-block-start: 22px;
-   padding-block-end: 29px;
+   padding-top: 22px;
+   padding-bottom: 29px;
  }
 
 // Footer nav
   .site_footer_navigation-list-item .active {
     font-weight: $font-bold;
-    padding-block-end: 20px;
+    padding-bottom: 20px;
   }
 
   .site_footer_navigation-list-item:nth-of-type(1) {
-    padding-block-end: 23px;
+    padding-bottom: 23px;
   }
 
   .site_footer_navigation-list-item > .list_item-link:hover {
@@ -80,18 +80,18 @@
 
 // Other works styling
   .other_works {
-    padding-block-start: calc(78px - 13px);
-    padding-block-end: calc(70px - 13px);
+    padding-top: calc(78px - 13px);
+    padding-bottom: calc(70px - 13px);
   }
 
   .other_works-list-item {
-   padding-block-end: 13px;
-   padding-block-start: 13px;
+   padding-bottom: 13px;
+   padding-top: 13px;
   }
 
   .other_works-details {
     flex-direction: column;
-    padding-inline-start: 31px;
+    padding-left: 31px;
   }
 
   .other_works-image {
@@ -107,12 +107,12 @@
 
   .page-information {
     border-block-start: 1px solid hsla(0, 0, 0, 0.1);
-    padding-block-start:27px;
-    padding-block-end: 29px;
+    padding-top:27px;
+    padding-bottom: 29px;
   }
 
   .information:nth-of-type(2) {
-    padding-block-start: 7px;
+    padding-top: 7px;
   }
 
   // For desktop
@@ -123,8 +123,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-block-start: 72px;
-    padding-block-end: 75px;
+    padding-top: 72px;
+    padding-bottom: 75px;
   }
 
   .site_footer-about,
@@ -132,18 +132,18 @@
   .site_footer_navigation-list,
   .information
    {
-    padding-inline-start: 0;
-    padding-inline-end: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .other_works,
   .site_footer-about {
-    padding-block-start: 0;
+    padding-top: 0;
   }
 
   .site_footer_navigation-list,
   .other_works {
-    padding-block-end: 79px;
+    padding-bottom: 79px;
   }
 
 // Styling the site_footer-about
@@ -163,13 +163,13 @@
   }
 
   .other_works-list-item:nth-of-type(1) {
-    padding-block-start: 0;
-    padding-block-end: calc(39px / 2);
+    padding-top: 0;
+    padding-bottom: calc(39px / 2);
   }
 
   .other_works-list-item:nth-of-type(2) {
-    padding-block-end: 0;
-    padding-block-start: calc(39px / 2);
+    padding-bottom: 0;
+    padding-top: calc(39px / 2);
   }
 
 // Changing the layout of the page_information.
@@ -177,16 +177,16 @@
     display: flex;
     place-content: space-between;
     flex-basis: 100%;
-    padding-inline-start: 135px;
-    padding-inline-end: 135px;
+    padding-left: 135px;
+    padding-right: 135px;
   }
 
   .site_footer-about {
-    padding-inline-start: 135px;
+    padding-left: 135px;
   }
 
   .other_works {
-    padding-inline-end: 135px;
+    padding-right: 135px;
   }
 
   .information {

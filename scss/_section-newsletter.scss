@@ -2,8 +2,8 @@
 
 .section_newsletter {
   background: #FFDD78;
-  padding-block-start: 63px;
-  padding-block-end: 54px;
+  padding-top: 63px;
+  padding-bottom: 54px;
 }
 
 .article_header-link {
@@ -20,25 +20,25 @@
 // Decoration of the form.
 .email_input {
   border: 1px solid #DADADA;
-  padding-block-start: 16px;
-  padding-block-end: 16px;
-  margin-block-start: 16px;
-  margin-block-end: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   max-width: 346px;
 }
 
 input::-webkit-input-placeholder {
-  padding-inline-start: 16px;
+  padding-left: 16px;
 }
 
 .submit_button {
   background-color: #434CCC;
   color: #FFFFFF;
   font-size: 16px;
-  padding-block-start: calc((48px - 16px) / 2);
-  padding-block-end: calc((48px - 16px) / 2);
-  padding-inline-start: 45px;
-  padding-inline-end: 45px;
+  padding-top: calc((48px - 16px) / 2);
+  padding-bottom: calc((48px - 16px) / 2);
+  padding-left: 45px;
+  padding-right: 45px;
   border: none;
   max-height: 48px;
   max-width: 100%;
@@ -70,8 +70,8 @@ input::-webkit-input-placeholder {
 @media (min-width: $break-point-large) {
 
   .section_newsletter {
-    padding-block-start: 79px;
-    padding-block-end: 104px;
+    padding-top: 79px;
+    padding-bottom: 104px;
   }
 
   .newsletter_article {
@@ -97,12 +97,12 @@ input::-webkit-input-placeholder {
   }
 
   .email_input {
-    margin-block-end: 0;
+    margin-bottom: 0;
     width: 346px;
   }
 
   .submit_button {
-    margin-block-start: 30px;
+    margin-top: 30px;
   }
 
 }

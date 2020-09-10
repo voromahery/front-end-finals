@@ -1,7 +1,7 @@
 @import "./variable";
 
 .section_details-content {
-  padding-block-start: 31px;
+  padding-top: 31px;
 }
 
 // Put the arrow on the text
@@ -11,7 +11,7 @@
 
 .breadcrumb-link {
   color: $common-font-color;
-  padding-inline-start: calc(14px + 10px);
+  padding-left: calc(14px + 10px);
 }
 
 .breadcrumb-link::before {
@@ -38,8 +38,8 @@
 .details_content-figure {
   display: grid;
   grid-gap: 9px;
-  padding-block-start: calc(82px - 32px);
-  padding-block-end: calc(92px - 32px);
+  padding-top: calc(82px - 32px);
+  padding-bottom: calc(92px - 32px);
   overflow: auto;
 }
 
@@ -89,17 +89,17 @@
 }
 
 .details_content-summary-article {
-  padding-block-start: 75px;
-  padding-block-end: 105px;
+  padding-top: 75px;
+  padding-bottom: 105px;
 }
 
 .summary_article-header-paragraph {
-  padding-block-start: 31px;
+  padding-top: 31px;
 }
 
 .summary_article-paragraph,
 .summary_article-header-paragraph {
-  padding-block-end: 31px;
+  padding-bottom: 31px;
 }
 
 .summary_article-paragraph,
@@ -141,7 +141,7 @@ figure {
   // Styling the summary article.
   .details_content-summary-article {
     grid-column: 2;
-    padding-block-start: 0;
+    padding-top: 0;
   }
 
   .summary_article-heading {
@@ -150,11 +150,11 @@ figure {
   }
 
   .summary_article-header-paragraph {
-    padding-block-end: 38px;
+    padding-bottom: 38px;
   }
 
   .summary_article-paragraph {
-    padding-block-end: 55px;
+    padding-bottom: 55px;
   }
 
   // Styling the figure and the images in it.
