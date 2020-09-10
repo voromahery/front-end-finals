@@ -475,8 +475,6 @@ input::-webkit-input-placeholder {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding-inline-start: 135px;
-    padding-inline-end: 135px;
     padding-block-start: 72px;
     padding-block-end: 75px; }
   .site_footer-about,
@@ -506,7 +504,13 @@ input::-webkit-input-placeholder {
   .page-information {
     display: flex;
     place-content: space-between;
-    flex-basis: 100%; }
+    flex-basis: 100%;
+    padding-inline-start: 135px;
+    padding-inline-end: 135px; }
+  .site_footer-about {
+    padding-inline-start: 135px; }
+  .other_works {
+    padding-inline-end: 135px; }
   .information {
     padding: 0; } }
 
