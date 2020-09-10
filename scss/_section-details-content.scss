@@ -4,6 +4,7 @@
   padding-block-start: 31px;
 }
 
+// Put the arrow on the text
 .details_content-breadcrumb {
   position: relative;
 }
@@ -17,13 +18,14 @@
   content: "";
   background-image: url("#{$image-path}icon_arrow_left.svg");
   display: block;
-  width: 14px;
-  height: 8px;
   position: absolute;
   top: 5px;
   left: 0;
+  width: 14px;
+  height: 8px;
 }
 
+// For the header article: "details_content-header-article"
 .details_content-heading {
   font-size: 52px;
  }
@@ -32,20 +34,21 @@
   font-size: 18px;
 }
 
+// Styling the figure and the images in it
 .details_content-figure {
   display: grid;
   grid-gap: 9px;
   padding-block-start: calc(82px - 32px);
   padding-block-end: calc(92px - 32px);
+  overflow: auto;
 }
 
-// Styling the images
 .active-picture {
   grid-column: 1/9;
 }
 
 .image-active,
-.list-item-active {
+.details_content-figure-picture {
   max-width: 346px;
   max-height: 215px;
 }
@@ -64,7 +67,7 @@
   opacity: 0.5;
 }
 
-// Information about the images
+// Information about the images.
 .photo_information-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -80,7 +83,7 @@
   font-weight: 700;
 }
  
-// Summary
+// Summary article.
 .summary_article-heading {
   font-size: 40px;
 }
@@ -112,8 +115,10 @@ figure {
   margin: 0;
 }
 
-// For desktop
+// For desktop.
 @media (min-width: $break-point-large) {
+
+  // Styling the header article.
   .section_details-content {
     display: grid;
     grid-gap: 2rem;
@@ -124,6 +129,7 @@ figure {
     max-width: 457px;
   }
 
+  // Styling the summary article.
   .details_content-summary-article {
     grid-column: 2;
     padding-block-start: 0;
@@ -142,14 +148,17 @@ figure {
     padding-block-end: 55px;
   }
 
-  .image-active {
-    max-width: 1170px;
-    max-height: 728px;
-  }
-
+  // Styling the figure and the images in it.
   .details_content-figure {
     grid-column: 1/3;
     max-width: 1170px;
+    overflow: visible;
+  }
+
+  .image-active,
+  .details_content-figure-picture {
+    max-width: 1170px;
+    max-height: 728px;
   }
 
   .photo_information-list {
@@ -158,4 +167,5 @@ figure {
     align-items: flex-end;
     grid-column: 1;
   }
+
 }

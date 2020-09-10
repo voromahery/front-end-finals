@@ -1,10 +1,8 @@
-// Components
 
-
-// color
+// Color of the text which repeats a lot.
 $common-font-color: rgba(0, 0, 0, 0.5);
 
-//Font-name
+// Font-name
 $dm-sans: "dm_sans";
 $dm-serif: "dm_serif_display";
 
@@ -20,7 +18,6 @@ $break-point-medium: 640px;
 $break-point-large: 1200px;
 
 // Mixins
-
 @mixin reset-list {
   list-style: none;
   padding: 0;

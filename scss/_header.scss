@@ -3,8 +3,8 @@
 // Masthead styling
 .masthead {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   background: #434CCC;
   padding-block-start: 16px;
@@ -25,6 +25,7 @@
 
 // For desktop
 @media (min-width: $break-point-large) {
+
   .masthead {
     padding-inline-start: 135px;
     padding-inline-end: 135px;
@@ -33,4 +34,5 @@
   .masthead_heading-title {
     font-size: 40px;
   }
+
 }

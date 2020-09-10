@@ -1,6 +1,7 @@
 @import "./variable";
 
 .share_link-list {
+  // 18px is the width of instagram icon, 9px is the width of the facebook icon and 41px is the space between.
   max-width: calc(41px + 9px + 18px);
   justify-content: space-between;
   align-items: center;

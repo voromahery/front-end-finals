@@ -1,18 +1,5 @@
 @import "./variable.scss";
 
-.menu {
-  background-image: url("#{$image-path}icon_menu.svg");
-  width: 20px;
-  height: 14px;
-  display: block;
-  background-size: cover;
-  text-indent: -9999px;
-}
-
-.show-menu {
-  top: -100%;
-}
-
 .navigation {
   position: relative;
 }
@@ -37,6 +24,29 @@
   max-width: 400px;
 }
 
+.navigation_list-item {
+  font-weight: 700;
+  border-block-end: 1px solid #FFFFFF;
+}
+
+.navigation_link {
+  color: #FFFFFF;
+}
+
+.menu {
+  background-image: url("#{$image-path}icon_menu.svg");
+  width: 20px;
+  height: 14px;
+  display: block;
+  background-size: cover;
+  text-indent: -9999px;
+}
+
+.show-menu {
+  top: -100%;
+}
+
+// When the icon is clicked, the menu will appear
 body > [type="checkbox"]:checked ~ header .navigation_list {
     position: absolute;
     right: 0;
@@ -55,24 +65,26 @@ body > [type="checkbox"]:checked ~ header .menu {
   height: 100vh;
 }
 
-.navigation_list-item {
-  font-weight: 700;
-}
-
-.navigation_link {
-  color: #FFFFFF;
-}
-// For desktop
-@media (min-width: $break-point-large) {
+// Menu for the medium device and desktop
+@media (min-width: $break-point-medium),
+       (min-width: $break-point-large) {
 
   .navigation_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: unset;
     background-image: none;
     height: 100%;
     width: 324px;
     position: unset;
     max-width: 100%;
     transform: none;
-    background-color: unset;
+  }
+
+  .navigation_list-item {
+    display: block;
+    border: none;
   }
 
   .show-menu,
@@ -80,13 +92,4 @@ body > [type="checkbox"]:checked ~ header .menu {
     display: none;
   }
 
-  .navigation_list-item {
-    display: block;
-  }
-
-  .navigation_list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }

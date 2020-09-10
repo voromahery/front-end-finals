@@ -17,6 +17,7 @@
   font-size: 40px;
 }
 
+// Decoration of the form.
 .email_input {
   border: 1px solid #DADADA;
   padding-block-start: 16px;
@@ -67,6 +68,7 @@ input::-webkit-input-placeholder {
 
 // For desktop
 @media (min-width: $break-point-large) {
+
   .section_newsletter {
     padding-block-start: 79px;
     padding-block-end: 104px;
@@ -85,10 +87,12 @@ input::-webkit-input-placeholder {
     font-size: 52px;
   }
 
+// Decoration of the form
   .section_newsletter form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    // 346px is the width of the input, 170px is the widt of the button and 54px is the space between them
     width: calc(346px + 54px + 170px);
   }
 
@@ -100,4 +104,5 @@ input::-webkit-input-placeholder {
   .submit_button {
     margin-block-start: 30px;
   }
+
 }
