@@ -450,6 +450,10 @@ input::-webkit-input-placeholder {
 .site_footer_navigation-list-item:nth-of-type(1) {
   padding-block-end: 23px; }
 
+.site_footer_navigation-list-item > a:hover {
+  color: #000000;
+  font-weight: 700; }
+
 .other_works {
   padding-block-start: calc(78px - 13px);
   padding-block-end: calc(70px - 13px); }
