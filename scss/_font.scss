@@ -6,7 +6,7 @@
   src: local("DM Serif Regular"), local("DM_Serif_Regular"), local("dm-serif-regular");
   src: url("#{$font-path}/#{$dm-serif}_400.woff2");
   src: url("#{$font-path}/#{$dm-serif}_400.woff");
-  font-weight: 400;
+  font-weight: $font-regular;
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   src: url("#{$font-path}/#{$dm-serif}_400_italic.woff2");
   src: url("#{$font-path}/#{$dm-serif}_400_italic.woff");
   font-style: italic;
-  font-weight: 400;
+  font-weight: $font-regular;
 }
 
 // All sans-serif font
@@ -24,7 +24,7 @@
   src: local("DM Sans Regular"), local("DM_Sans_Regular"), local("dm-sans-regular");
   src: url("#{$font-path}/#{$dm-sans}_400.woff2");
   src: url("#{$font-path}/#{$dm-sans}_400.woff");
-  font-weight: 400;
+  font-weight: $font-regular;
 }
 
 @font-face {
@@ -33,7 +33,7 @@
   src: url("#{$font-path}/#{$dm-sans}_400_italic.woff2");
   src: url("#{$font-path}/#{$dm-sans}_400_italic.woff");
   font-style: italic;
-  font-weight: 400;
+  font-weight: $font-regular;
 }
 
 @font-face {
@@ -42,7 +42,7 @@
   src: url("#{$font-path}/#{$dm-sans}_500_italic.woff2");
   src: url("#{$font-path}/#{$dm-sans}_500_italic.woff");
   font-style: italic;
-  font-weight: 500;
+  font-weight: $font-medium;
 }
 
 @font-face {
@@ -50,7 +50,7 @@
   src: local("DM Sans Medium"), local("DM_Sans_Medium"), local("dm-sans-medium");
   src: url("#{$font-path}/#{$dm-sans}_500.woff2");
   src: url("#{$font-path}/#{$dm-sans}_500.woff");
-  font-weight: 500;
+  font-weight: $font-medium;
 }
 
 @font-face {
@@ -58,7 +58,7 @@
   src: local("DM Sans Bold"), local("DM_Sans_Bold"), local("dm-sans-bold");
   src: url("#{$font-path}/#{$dm-sans}_700.woff2");
   src: url("#{$font-path}/#{$dm-sans}_700.woff");
-  font-weight: 700;
+  font-weight: $font-bold;
 }
 
 @font-face {
@@ -67,6 +67,6 @@
   src: url("#{$font-path}/#{$dm-sans}_700_italic.woff2");
   src: url("#{$font-path}/#{$dm-sans}_700_italic.woff");
   font-style: italic;
-  font-weight: 700;
+  font-weight: $font-bold;
 }
 
