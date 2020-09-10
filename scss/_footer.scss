@@ -1,6 +1,6 @@
 @import "./variable";
 
-  // Common style
+  // Common footer style
   .site_footer {
     background: #FFFFFF;
   }
@@ -25,8 +25,8 @@
   .website-information,
   .site_footer_navigation-list,
   .information {
-  line-height: 24px;
-}
+    line-height: 24px;
+  }
 
   .other_works-link,
   .other_works-details,
@@ -51,7 +51,8 @@
   .other_works-date {
     color: #000000;
   }
-  
+
+// Footer title and information
   .site_footer-title {
     font-size: 24px;
     text-transform: uppercase;
@@ -111,7 +112,7 @@
 
   // For desktop
 @media (min-width: $break-point-large) {
-
+// Common footer style
   .site_footer {
     display: flex;
     flex-wrap: wrap;
@@ -140,14 +141,17 @@
     padding-block-end: 79px;
   }
 
+// Styling the site_footer-about
   .site_footer-about {
     flex-basis: 20%;
   }
 
+// Styling the footer_nav
   .site_footer_navigation-list {
     flex-basis: 20%;
   }
 
+// Decorating the other_work-part
   .other_works {
     max-width: 370px;
     flex-basis: 35%;
@@ -163,6 +167,7 @@
     padding-block-start: calc(39px / 2);
   }
 
+// Changing the layout of the page_information.
   .page-information {
     display: flex;
     place-content: space-between;
@@ -182,4 +187,5 @@
   .information {
     padding: 0;
   }
+
 }
