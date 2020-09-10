@@ -145,6 +145,12 @@ section {
 .navigation_link {
   color: #FFFFFF; }
 
+.navigation_list-item:hover {
+  border-block-end: 1px solid chartreuse; }
+
+.navigation_link:hover {
+  color: chartreuse; }
+
 .menu {
   background-image: url("../images/icon_menu.svg");
   width: 20px;
@@ -536,7 +542,11 @@ input::-webkit-input-placeholder {
 
 .share_link-list .list_item-link {
   display: block;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  background-repeat: no-repeat; }
+
+.share_link-list .list_item-link:hover {
+  opacity: 0.5; }
 
 .facebook_icon {
   background-image: url("../images/icon_facebook.svg");
