@@ -49,8 +49,8 @@
 
 .image-active,
 .details_content-figure-picture {
-  max-width: 346px;
-  max-height: 215px;
+  max-width: 274px;
+  max-height: 170px;
 }
 
 .small-image,
@@ -114,6 +114,15 @@
 figure {
   margin: 0;
 }
+
+@media (min-width: $break-point-medium) {
+  .image-active,
+  .details_content-figure-picture {
+    max-width: 346px;
+    max-height: 215px;
+  }
+}
+
 
 // For desktop.
 @media (min-width: $break-point-large) {
