@@ -73,6 +73,11 @@
     padding-block-end: 23px;
   }
 
+  .site_footer_navigation-list-item > a:hover {
+    color: #000000;
+    font-weight: $font-bold;
+  }
+
 // Other works styling
   .other_works {
     padding-block-start: calc(78px - 13px);
