@@ -191,6 +191,8 @@ body > [type="checkbox"]:checked ~ header .menu {
     position: unset;
     max-width: 100%;
     transform: none; }
+  .navigation_list-item:hover {
+    border-block-end: none; }
   .navigation_list-item {
     display: block;
     border: none; }
