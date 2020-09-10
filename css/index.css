@@ -86,7 +86,7 @@ section {
   padding-inline-start: 14px;
   padding-inline-end: 14px; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   section {
     padding-inline-start: 135px;
     padding-inline-end: 135px; } }
@@ -110,7 +110,7 @@ section {
   color: #FFFFFF;
   text-transform: uppercase; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .masthead {
     padding-inline-start: 135px;
     padding-inline-end: 135px; }
@@ -179,7 +179,7 @@ body > [type="checkbox"]:checked ~ header .menu {
   width: 100vw;
   height: 100vh; }
 
-@media (min-width: 640px), (min-width: 1200px) {
+@media (min-width: 640px), (min-width: 1440px) {
   .navigation_list {
     display: flex;
     flex-direction: row;
@@ -295,7 +295,7 @@ figure {
     max-width: 346px;
     max-height: 215px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .section_details-content {
     display: grid;
     grid-gap: 2rem; }
@@ -381,7 +381,7 @@ input::-webkit-input-placeholder {
   font-size: 12px;
   text-transform: uppercase; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .section_newsletter {
     padding-block-start: 79px;
     padding-block-end: 104px; }
@@ -492,7 +492,7 @@ input::-webkit-input-placeholder {
 .information:nth-of-type(2) {
   padding-block-start: 7px; }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .site_footer {
     display: flex;
     flex-wrap: wrap;
