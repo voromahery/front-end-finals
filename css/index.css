@@ -157,7 +157,8 @@ section {
   height: 14px;
   display: block;
   background-size: cover;
-  text-indent: -9999px; }
+  text-indent: -9999px;
+  cursor: pointer; }
 
 .show-menu {
   top: -100%; }
