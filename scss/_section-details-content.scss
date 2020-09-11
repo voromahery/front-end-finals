@@ -41,6 +41,7 @@
   padding-top: calc(82px - 32px);
   padding-bottom: calc(92px - 32px);
   overflow: auto;
+  grid-auto-columns: min-content;
 }
 
 .active-picture {
@@ -111,7 +112,7 @@
 .summary_article-header-paragraph,
 .summary_article-paragraph,
 .details_content-breadcrumb,
-figure {
+.details_content-figure {
   margin: 0;
 }
 
