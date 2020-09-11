@@ -6,6 +6,7 @@
 }
 
 .details_content-header,
+.details_content-figure-picture,
 .photo_information-list,
 .details_content-figure-picture active-picture,
 .details_content-summary-article {
@@ -21,6 +22,7 @@
 // For desktop.
 @media (min-width: $break-point-large) {
   .details_content-header,
+  .details_content-figure-picture,
   .photo_information-list,
   .details_content-figure-picture active-picture,
   .details_content-summary-article {
