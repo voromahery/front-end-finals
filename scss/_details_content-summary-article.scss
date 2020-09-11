@@ -1,0 +1,53 @@
+@import "./variable";
+
+.summary_article-heading {
+  font-size: 40px;
+}
+
+.details_content-summary-article {
+  padding-top: 75px;
+  padding-bottom: 105px;
+}
+
+.summary_article-header-paragraph {
+  padding-top: 31px;
+}
+
+.summary_article-paragraph,
+.summary_article-header-paragraph {
+  padding-bottom: 31px;
+}
+
+.summary_article-paragraph,
+.information_title {
+  color: $common-font-color;
+}
+
+.summary_article-heading,
+.summary_article-header-paragraph,
+.summary_article-paragraph,
+.details_content-breadcrumb,
+.details_content-figure {
+  margin: 0;
+}
+
+// For desktop.
+@media (min-width: $break-point-large) {
+  .details_content-summary-article {
+    grid-column: 2;
+    padding-top: 0;
+  }
+
+  .summary_article-heading {
+    line-height: 62px;
+    font-size: 52px;
+  }
+
+  .summary_article-header-paragraph {
+    padding-bottom: 38px;
+  }
+
+  .summary_article-paragraph {
+    padding-bottom: 55px;
+  }
+}

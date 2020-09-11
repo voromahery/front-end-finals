@@ -1,0 +1,69 @@
+@import "./variable";
+
+.email_input {
+  border: 1px solid #DADADA;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  max-width: 346px;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 16px;
+}
+
+.submit_button {
+  background-color: #434CCC;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding-top: calc((48px - 16px) / 2);
+  padding-bottom: calc((48px - 16px) / 2);
+  padding-left: 45px;
+  padding-right: 45px;
+  border: none;
+  max-height: 48px;
+  max-width: 100%;
+}
+
+.submit_button:hover {
+  background-color: #1e27a7;
+  box-shadow: 1px 1px 3px #000000;
+}
+
+.submit_button,
+.email_input {
+  border-radius: 5px;
+}
+
+.submit_button,
+.section_newsletter label {
+  font-weight: $font-bold;
+}
+
+.section_newsletter label {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+// For desktop
+@media (min-width: $break-point-large) {
+  .section_newsletter form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // 346px is the width of the input, 170px is the widt of the button and 54px is the space between them
+    width: calc(346px + 54px + 170px);
+  }
+
+  .email_input {
+    margin-bottom: 0;
+    width: 346px;
+  }
+
+  .submit_button {
+    margin-top: 30px;
+  }
+}

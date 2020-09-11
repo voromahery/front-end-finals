@@ -1,0 +1,15 @@
+@import "./variable";
+
+.photo_information-list {
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.photo_information-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.information-detail {
+  font-weight: $font-bold;
+}

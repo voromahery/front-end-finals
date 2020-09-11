@@ -1,0 +1,26 @@
+@import "./variable";
+
+.page-information {
+  border-block-start: 1px solid hsla(0, 0, 0, 0.1);
+  padding-top:27px;
+  padding-bottom: 29px;
+}
+
+.information:nth-of-type(2) {
+  padding-top: 7px;
+}
+
+// For desktop
+@media (min-width: $break-point-large) {
+  .page-information {
+    display: flex;
+    place-content: space-between;
+    flex-basis: 100%;
+    padding-left: 135px;
+    padding-right: 135px;
+  }
+
+  .information {
+    padding: 0;
+  }
+}

@@ -1,0 +1,11 @@
+@import "./variable";
+
+.section_details-content {
+  padding-top: 31px;
+}
+
+.details_content-figure,
+.image_list,
+.photo_information-list {
+  display: grid;
+}

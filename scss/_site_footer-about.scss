@@ -1,0 +1,14 @@
+@import "./variable";
+
+.website-information {
+  padding-top: 22px;
+  padding-bottom: 29px;
+}
+
+// For desktop
+@media (min-width: $break-point-large) {
+  .site_footer-about {
+    flex-basis: 20%;
+    padding-left: 135px;
+  }
+}

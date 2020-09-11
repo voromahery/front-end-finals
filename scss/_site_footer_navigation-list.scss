@@ -1,0 +1,22 @@
+@import "./variable";
+
+.site_footer_navigation-list-item .active {
+  font-weight: $font-bold;
+  padding-bottom: 20px;
+}
+
+.site_footer_navigation-list-item:nth-of-type(1) {
+  padding-bottom: 23px;
+}
+
+.site_footer_navigation-list-item > .list_item-link:hover {
+  color: #000000;
+  font-weight: $font-bold;
+}
+
+// For desktop
+  @media (min-width: $break-point-large) {
+    .site_footer_navigation-list {
+      flex-basis: 20%;
+    }
+  }
