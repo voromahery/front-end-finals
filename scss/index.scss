@@ -1,16 +1,21 @@
+// Default
 @import "./font";
-@import "./logo";
 @import "./default";
+
+// Site section
 @import "./header";
 @import "./navigation";
 @import "./section_details-content";
+@import "./section_newsletter";
+@import "./footer";
+
+// Components
+@import "./logo";
 @import "./details_content-header";
-@import "./figure";
 @import "./photo_information-list";
 @import "./details_content-summary-article";
-@import "./section_newsletter";
 @import "./form_subscribe";
-@import "./footer";
+@import "./figure";
 @import "./site_footer-about";
 @import "./site_footer_navigation-list";
 @import "./other_works";
