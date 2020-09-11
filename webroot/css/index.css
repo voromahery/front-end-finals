@@ -239,8 +239,8 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .image-active,
 .details_content-figure-picture {
-  max-width: 274px;
-  max-height: 170px; }
+  max-width: 346px;
+  max-height: 215px; }
 
 .small-image,
 .image-active {
@@ -289,12 +289,6 @@ body > [type="checkbox"]:checked ~ header .menu {
 .details_content-breadcrumb,
 .details_content-figure {
   margin: 0; }
-
-@media (min-width: 640px) {
-  .image-active,
-  .details_content-figure-picture {
-    max-width: 346px;
-    max-height: 215px; } }
 
 @media (min-width: 1440px) {
   .section_details-content {

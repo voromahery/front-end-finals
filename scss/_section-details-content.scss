@@ -50,9 +50,15 @@
 
 .image-active,
 .details_content-figure-picture {
-  max-width: 274px;
-  max-height: 170px;
+  max-width: 346px;
+  max-height: 215px;
 }
+
+// .image-active,
+// .details_content-figure-picture {
+//   max-width: 274px;
+//   max-height: 170px;
+// }
 
 .small-image,
 .image-active {
@@ -116,13 +122,6 @@
   margin: 0;
 }
 
-@media (min-width: $break-point-medium) {
-  .image-active,
-  .details_content-figure-picture {
-    max-width: 346px;
-    max-height: 215px;
-  }
-}
 
 
 // For desktop.
