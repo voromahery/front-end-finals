@@ -230,14 +230,14 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .section_details-content {
   padding-top: 31px;
-  padding-inline-end: 0; }
+  padding-right: 0; }
 
 .details_content-header,
 .details_content-figure-picture,
 .photo_information-list,
 .details_content-figure-picture active-picture,
 .details_content-summary-article {
-  padding-inline-end: 14px; }
+  padding-right: 14px; }
 
 .details_content-figure,
 .image_list,
@@ -250,9 +250,9 @@ body > [type="checkbox"]:checked ~ header .menu {
   .photo_information-list,
   .details_content-figure-picture active-picture,
   .details_content-summary-article {
-    padding-inline-end: 0; }
+    padding-right: 0; }
   .section_details-content {
-    padding-inline-end: 135px; } }
+    padding-right: 135px; } }
 
 .details_content-breadcrumb {
   position: relative; }
