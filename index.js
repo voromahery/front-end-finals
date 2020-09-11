@@ -5,14 +5,11 @@ const currentImage = document.querySelector('picture');
 console.log(figure);
 
 images.forEach(image => image.addEventListener('click', (e) => {
-  const small = e.target.dataset;
-  const medium = e.target.src;
-  const large = e.target;
   const html = `
-  <picture class="details_content-figure-picture active-picture">
-    <source srcset="${e.target.src}" class="image-active" media="(min-width: 1200px)">
-    <source srcset="${e.target.src}" class="image-active" media="(min-width: 640px)">
-      <img src="${e.target.src}" alt="${e.target.alt}" class="image-active" />
+    <picture class="details_content-figure-picture active-picture">
+      <source srcset="./images/${e.target.name}_lg.jpg" class="image-active" media="(min-width: 1200px)">
+      <source srcset="./images/${e.target.name}_md.jpg" class="image-active" media="(min-width: 640px)">
+      <img src="./images/${e.target.name}_sm.jpg" alt="${e.target.alt}" class="image-active" />
     </picture>
   `;
 
