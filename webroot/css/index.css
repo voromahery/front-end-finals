@@ -485,8 +485,7 @@ input::-webkit-input-placeholder {
 
 .image-active,
 .details_content-figure-picture {
-  max-width: 100%;
-  max-height: 215px; }
+  max-width: 100%; }
 
 .image_list {
   grid-gap: 10.5px;
