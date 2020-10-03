@@ -7,7 +7,7 @@ console.log(currentImage);
 images.forEach(image => image.addEventListener('click', (e) => {
   // Create a block of html
   const html = `
-      <source srcset="./images/${e.target.id}_lg.jpg" class="image-active" media="(min-width: 1200px)">
+      <source srcset="./images/${e.target.id}_lg.jpg" class="image-active" media="(min-width: 1000px)">
       <source srcset="./images/${e.target.id}_md.jpg" class="image-active" media="(min-width: 375px)">
       <img src="./images/${e.target.id}_sm.jpg" alt="${e.target.alt}" class="image-active" />
   `;
