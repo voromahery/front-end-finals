@@ -13,7 +13,7 @@
   padding-right: 14px;
 }
 
-.details_content-figure,
+// .details_content-figure,
 .image_list,
 .photo_information-list {
   display: grid;
@@ -28,6 +28,11 @@
   .details_content-summary-article {
     padding-right: 0;
   }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
 
   .section_details-content {
     padding-right: 135px;
