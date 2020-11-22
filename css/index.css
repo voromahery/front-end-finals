@@ -202,14 +202,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .section_details-content {
   padding-top: 31px;
-  padding-right: 0; }
-
-.details_content-header,
-.details_content-figure-picture,
-.photo_information-list,
-.details_content-figure-picture active-picture,
-.details_content-summary-article {
-  padding-right: 14px; }
+  padding-right: 14; }
 
 .image_list,
 .photo_information-list {
@@ -380,7 +373,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .photo_information-list {
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  gap: 40px;
   flex-basis: 51%; }
 
 .photo_information-list-item {
