@@ -2,7 +2,7 @@
 
 .photo_information-list {
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 40px;
+  gap: 40px;
   flex-basis: 51%;
 }
 
