@@ -6,6 +6,8 @@
 }
 
 .breadcrumb-link {
+  display: flex;
+  align-items: center;
   color: $common-font-color;
   padding-left: calc(14px + 10px);
 }
@@ -14,8 +16,9 @@
   content: "";
   background-image: url("#{$image-path}icon_arrow_left.svg");
   display: block;
+  background-repeat: no-repeat;
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 14px;
   height: 8px;
@@ -24,7 +27,7 @@
 // For the header article: "details_content-header-article"
 .details_content-heading {
   font-size: 52px;
- }
+}
 
 .details_content-header-paragraph {
   font-size: 18px;

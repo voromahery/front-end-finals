@@ -345,6 +345,8 @@ body > [type="checkbox"]:checked ~ header .menu {
   position: relative; }
 
 .breadcrumb-link {
+  display: flex;
+  align-items: center;
   color: rgba(0, 0, 0, 0.5);
   padding-left: calc(14px + 10px); }
 
@@ -352,8 +354,9 @@ body > [type="checkbox"]:checked ~ header .menu {
   content: "";
   background-image: url("../images/icon_arrow_left.svg");
   display: block;
+  background-repeat: no-repeat;
   position: absolute;
-  top: 5px;
+  top: 0;
   left: 0;
   width: 14px;
   height: 8px; }
@@ -548,17 +551,24 @@ input::-webkit-input-placeholder {
   padding-top: 13px; }
 
 .other_works-details {
-  flex-direction: column;
-  padding-left: 31px; }
+  flex-direction: column; }
 
 .other_works-image {
   max-width: 70px;
   max-height: 48px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-right: 31px; }
 
 .other_works-date {
   font-size: 12px;
   font-weight: 700; }
+
+.other_works-link {
+  flex-wrap: wrap; }
+
+@media (min-width: 250px) {
+  .other_works-link {
+    flex-wrap: nowrap; } }
 
 @media (min-width: 1000px) {
   .other_works {
