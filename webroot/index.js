@@ -1,26 +1,32 @@
-// Grab element from the html
-const images = Array.from(document.querySelectorAll(".small-image"));
-const currentImage = document.querySelector('picture');
-console.log(currentImage);
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// Add event on each image
-images.forEach(image => image.addEventListener('click', (e) => {
-  // Create a block of html
-  const html = `
-      <source srcset="./images/${e.target.id}_lg.jpg" class="image-active" media="(min-width: 1200px)">
-      <source srcset="./images/${e.target.id}_md.jpg" class="image-active" media="(min-width: 375px)">
-      <img src="./images/${e.target.id}_sm.jpg" alt="${e.target.alt}" class="image-active" />
-  `;
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+  console.log(n);
+}
 
-// Condition for active image
-  if (e.target.classList.contains('active-small')){
-        e.target.classList.remove('active-small');
-        e.target.classList.add('not-active');
-        return currentImage;
-// Condition for the deactivated image
-  } else if (e.target.classList.contains('not-active')) {
-        e.target.classList.remove('not-active');
-        e.target.classList.add('active-small')
-        currentImage.innerHTML = html;
-  } 
-}))
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+  console.log(n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}

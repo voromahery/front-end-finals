@@ -34,6 +34,51 @@
     opacity: 0.5;
   }
 
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .image_wrapper {
+    position: relative;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 40%;
+    color: #FFFFFF;
+    padding: 16px;
+    border-radius: 5px;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+// @media (min-width: 300px) {
+//   .prev,
+//   .next {
+//     top: 30%;
+//   }
+// }
+
+// @media (min-width: 600px) {
+//   .prev,
+//   .next {
+//     top: 40%;
+//   }
+// }
+
 // For desktop.
 @media (min-width: $break-point-large) {
   .details_content-figure {
