@@ -1,69 +1,68 @@
 @import "./variable";
 
 .details_content-figure {
-    grid-gap: 10px;
-    padding-top: calc(82px - 32px);
-    padding-bottom: calc(92px - 32px);
-  }
+  grid-gap: 10px;
+  padding-top: calc(82px - 32px);
+  padding-bottom: calc(92px - 32px);
+}
 
 .image-active,
 .details_content-figure-picture {
-    max-width: 100%;
-  }
+  max-width: 100%;
+}
 
 .image_list {
-     display: flex;
-    flex-direction: row;
-    column-gap: 9px;
-    overflow: hidden;
-    flex-basis: fill;
-    padding-top: 8px;
-  }
+  display: flex;
+  flex-direction: row;
+  column-gap: 9px;
+  overflow: hidden;
+  flex-basis: fill;
+}
 
 .small-image,
-.image-active {
-    border-radius: 5px;
-  }
+.active-picture img {
+  border-radius: 5px;
+}
 
 .small-image {
-    max-width: 137px;
-    max-height: 85px;
-  }
+  max-width: 137px;
+  max-height: 85px;
+}
 
 .not-active {
-    opacity: 0.5;
-  }
+  opacity: 0.5;
+}
 
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
-  
-  .image_wrapper {
-    position: relative;
-  }
-  
-  .prev,
-  .next {
-    position: absolute;
-    top: 40%;
-    color: #FFFFFF;
-    padding: 16px;
-    border-radius: 5px;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.image_wrapper {
+  position: relative;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 // For desktop.
 @media (min-width: $break-point-large) {
