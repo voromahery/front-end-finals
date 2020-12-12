@@ -17,9 +17,15 @@
 }
 
 .masthead_heading-title {
-  font-size: 24px;
+  font-size: 20px;
   color: #FFFFFF;
   text-transform: uppercase;
+}
+
+@media (min-width: 300px) {
+  .masthead_heading-title {
+    font-size: 24px;
+  }
 }
 
 // For desktop

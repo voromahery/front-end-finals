@@ -23,7 +23,7 @@
 }
 
 .other_works-date {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
 }
 
@@ -35,6 +35,12 @@
   .other_works-link {
     flex-wrap: nowrap;
     align-items: center;
+  }
+}
+
+@media (min-width: 300px) {
+  .other_works-date {
+    font-size: 12px;
   }
 }
 

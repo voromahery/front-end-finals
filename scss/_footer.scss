@@ -1,66 +1,70 @@
 @import "./variable";
 
-  // Common footer style
-  .site_footer {
-    background: #FFFFFF;
-  }
+// Common footer style
+.site_footer {
+  background: #ffffff;
+}
 
-  .site_footer-about,
-  .other_works,
-  .site_footer_navigation-list,
-  .information
-   {
-    padding-left: 14px;
-    padding-right: 14px;
-  }
+.site_footer-about,
+.other_works,
+.site_footer_navigation-list,
+.information {
+  padding-left: 14px;
+  padding-right: 14px;
+}
 
-  .information,
-  .website-information,
-  .other_works-link,
-  .site_footer_navigation-list-item .list_item-link {
-    color: $common-font-color;
-  }
+.information,
+.website-information,
+.other_works-link,
+.site_footer_navigation-list-item .list_item-link {
+  color: $common-font-color;
+}
 
-  .other_works-list-item,
-  .website-information,
-  .site_footer_navigation-list,
-  .information {
-    line-height: 24px;
-  }
+.other_works-list-item,
+.website-information,
+.site_footer_navigation-list,
+.information {
+  line-height: 24px;
+}
 
-  .other_works-link,
-  .other_works-details,
-  .share_link-list {
-    display: flex;
-  }
+.other_works-link,
+.other_works-details,
+.share_link-list {
+  display: flex;
+}
 
-  .site_footer-about {
-    padding-top: 76px;
-    padding-bottom: 79px;
+.site_footer-about {
+  padding-top: 76px;
+  padding-bottom: 79px;
+}
 
-  }
+.site_footer-heading,
+.website-information,
+.information {
+  margin: 0;
+}
 
-  .site_footer-heading,
-  .website-information,
-  .information {
-    margin: 0;
-  }
-
-  .site_footer-title,
-  .site_footer_navigation-list-item .active,
-  .other_works-date {
-    color: #000000;
-  }
+.site_footer-title,
+.site_footer_navigation-list-item .active,
+.other_works-date {
+  color: #000000;
+}
 
 // Footer title and information
+.site_footer-title {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 300px) {
   .site_footer-title {
     font-size: 24px;
-    text-transform: uppercase;
- }
+  }
+}
 
-  // For desktop
+// For desktop
 @media (min-width: $break-point-large) {
-// Common footer style
+  // Common footer style
   .site_footer {
     display: flex;
     flex-wrap: wrap;
@@ -73,8 +77,7 @@
   .site_footer-about,
   .other_works,
   .site_footer_navigation-list,
-  .information
-   {
+  .information {
     padding-left: 0;
     padding-right: 0;
   }
@@ -88,5 +91,4 @@
   .other_works {
     padding-bottom: 79px;
   }
-
 }

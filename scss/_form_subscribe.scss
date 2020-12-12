@@ -2,10 +2,10 @@
 
 .email_input {
   border: 1px solid #dadada;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: calc(16px / 2);
+  padding-bottom: calc(16px / 2);
+  margin-top: calc(16px / 2);
+  margin-bottom: calc(16px / 2);
   max-width: 346px;
 }
 
@@ -16,11 +16,11 @@ input::-webkit-input-placeholder {
 .submit_button {
   background-color: #434ccc;
   color: #ffffff;
-  font-size: 16px;
-  padding-top: calc((48px - 16px) / 2);
-  padding-bottom: calc((48px - 16px) / 2);
-  padding-left: 45px;
-  padding-right: 45px;
+  font-size: 14px;
+  padding-top: calc((48px - 16px) / 4);
+  padding-bottom: calc((48px - 16px) / 4);
+  padding-left: calc(45px / 2);
+  padding-right: calc(45px / 2);
   border: none;
   max-width: 100%;
 }
@@ -43,8 +43,29 @@ input::-webkit-input-placeholder {
 .section_newsletter label {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase;
+}
+
+@media (min-width: 300px) {
+    .email_input {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+  }
+
+  .submit_button {
+    font-size: 16px;
+    padding-top: calc((48px - 16px) / 2);
+    padding-bottom: calc((48px - 16px) / 2);
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .section_newsletter label {
+    font-size: 12px;
+  }
 }
 
 // For desktop

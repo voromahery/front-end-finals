@@ -2,7 +2,7 @@
 
 .summary_article-heading {
   font-size: 40px;
-  line-height: 48px;
+  line-height: 45px;
 }
 
 .details_content-summary-article {
@@ -31,6 +31,13 @@
 .details_content-breadcrumb,
 .details_content-figure {
   margin: 0;
+}
+
+@media (min-width: 300px) {
+  .summary_article-heading {
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 
 // For desktop.

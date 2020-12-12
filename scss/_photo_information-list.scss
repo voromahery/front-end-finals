@@ -1,12 +1,5 @@
 @import "./variable";
 
-.photo_information-list {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  flex-basis: 51%;
-  line-height: 24px;
-}
-
 .photo_information-list-item {
   display: flex;
   flex-direction: column;
@@ -14,4 +7,13 @@
 
 .information-detail {
   font-weight: $font-bold;
+}
+
+@media (min-width: 300px) {
+  .photo_information-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    flex-basis: 51%;
+    line-height: 24px;
+  }
 }

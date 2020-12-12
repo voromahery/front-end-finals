@@ -1,7 +1,7 @@
 @import "./variable";
 
 .section_newsletter {
-  background: #FFDD78;
+  background: #ffdd78;
   padding-top: 63px;
   padding-bottom: 54px;
 }
@@ -18,6 +18,16 @@
   line-height: 48px;
 }
 
+@media (min-width: 300px) {
+  .article_header-link {
+    font-size: 14px;
+  }
+
+  .newsletter_article-title {
+    font-size: 38px;
+  }
+}
+
 // For desktop
 @media (min-width: $break-point-large) {
   .section_newsletter {
@@ -32,9 +42,9 @@
 
   .newsletter_article-header {
     max-width: 382px;
-   }
+  }
 
-   .newsletter_article-title {
+  .newsletter_article-title {
     font-size: 52px;
     line-height: 64px;
   }

@@ -399,18 +399,19 @@ body > [type="checkbox"]:checked ~ header .menu {
     line-height: 80px;
     max-width: 457px; } }
 
-.photo_information-list {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  flex-basis: 51%;
-  line-height: 24px; }
-
 .photo_information-list-item {
   display: flex;
   flex-direction: column; }
 
 .information-detail {
   font-weight: 700; }
+
+@media (min-width: 300px) {
+  .photo_information-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    flex-basis: 51%;
+    line-height: 24px; } }
 
 .summary_article-heading {
   font-size: 40px;

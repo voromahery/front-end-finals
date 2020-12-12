@@ -23,12 +23,24 @@
 
 // For the header article: "details_content-header-article"
 .details_content-heading {
-  font-size: 52px;
-  line-height: 64px;
+  font-size: 40px;
+  line-height: 58px;
 }
 
 .details_content-header-paragraph {
-  font-size: 18px;
+  font-size: 16px;
+}
+
+@media (min-width: 300px) {
+  // For the header article: "details_content-header-article"
+  .details_content-heading {
+    font-size: 52px;
+    line-height: 64px;
+  }
+
+  .details_content-header-paragraph {
+    font-size: 18px;
+  }
 }
 
 // For desktop.
