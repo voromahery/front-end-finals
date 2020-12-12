@@ -113,9 +113,13 @@ section {
   margin: 0; }
 
 .masthead_heading-title {
-  font-size: 24px;
+  font-size: 20px;
   color: #FFFFFF;
   text-transform: uppercase; }
+
+@media (min-width: 300px) {
+  .masthead_heading-title {
+    font-size: 24px; } }
 
 @media (min-width: 1000px) {
   .masthead {
@@ -225,7 +229,7 @@ body > [type="checkbox"]:checked ~ header .menu {
     padding-right: 135px; } }
 
 .section_newsletter {
-  background: #FFDD78;
+  background: #ffdd78;
   padding-top: 63px;
   padding-bottom: 54px; }
 
@@ -238,6 +242,12 @@ body > [type="checkbox"]:checked ~ header .menu {
 .newsletter_article-title {
   font-size: 40px;
   line-height: 48px; }
+
+@media (min-width: 300px) {
+  .article_header-link {
+    font-size: 14px; }
+  .newsletter_article-title {
+    font-size: 38px; } }
 
 @media (min-width: 1000px) {
   .section_newsletter {
@@ -253,7 +263,7 @@ body > [type="checkbox"]:checked ~ header .menu {
     line-height: 64px; } }
 
 .site_footer {
-  background: #FFFFFF; }
+  background: #ffffff; }
 
 .site_footer-about,
 .other_works,
@@ -294,8 +304,12 @@ body > [type="checkbox"]:checked ~ header .menu {
   color: #000000; }
 
 .site_footer-title {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase; }
+
+@media (min-width: 300px) {
+  .site_footer-title {
+    font-size: 24px; } }
 
 @media (min-width: 1000px) {
   .site_footer {
@@ -364,11 +378,18 @@ body > [type="checkbox"]:checked ~ header .menu {
   height: 8px; }
 
 .details_content-heading {
-  font-size: 52px;
-  line-height: 64px; }
+  font-size: 40px;
+  line-height: 58px; }
 
 .details_content-header-paragraph {
-  font-size: 18px; }
+  font-size: 16px; }
+
+@media (min-width: 300px) {
+  .details_content-heading {
+    font-size: 52px;
+    line-height: 64px; }
+  .details_content-header-paragraph {
+    font-size: 18px; } }
 
 @media (min-width: 1000px) {
   .section_details-content {
@@ -393,7 +414,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .summary_article-heading {
   font-size: 40px;
-  line-height: 48px; }
+  line-height: 45px; }
 
 .details_content-summary-article {
   padding-top: 75px;
@@ -418,6 +439,11 @@ body > [type="checkbox"]:checked ~ header .menu {
 .details_content-figure {
   margin: 0; }
 
+@media (min-width: 300px) {
+  .summary_article-heading {
+    font-size: 40px;
+    line-height: 48px; } }
+
 @media (min-width: 1000px) {
   .details_content-summary-article {
     grid-column: 2;
@@ -433,10 +459,10 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .email_input {
   border: 1px solid #dadada;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 16px;
-  margin-bottom: 16px;
+  padding-top: calc(16px / 2);
+  padding-bottom: calc(16px / 2);
+  margin-top: calc(16px / 2);
+  margin-bottom: calc(16px / 2);
   max-width: 346px; }
 
 input::-webkit-input-placeholder {
@@ -445,11 +471,11 @@ input::-webkit-input-placeholder {
 .submit_button {
   background-color: #434ccc;
   color: #ffffff;
-  font-size: 16px;
-  padding-top: calc((48px - 16px) / 2);
-  padding-bottom: calc((48px - 16px) / 2);
-  padding-left: 45px;
-  padding-right: 45px;
+  font-size: 14px;
+  padding-top: calc((48px - 16px) / 4);
+  padding-bottom: calc((48px - 16px) / 4);
+  padding-left: calc(45px / 2);
+  padding-right: calc(45px / 2);
   border: none;
   max-width: 100%; }
 
@@ -468,8 +494,23 @@ input::-webkit-input-placeholder {
 .section_newsletter label {
   display: flex;
   flex-direction: column;
-  font-size: 12px;
+  font-size: 10px;
   text-transform: uppercase; }
+
+@media (min-width: 300px) {
+  .email_input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px; }
+  .submit_button {
+    font-size: 16px;
+    padding-top: calc((48px - 16px) / 2);
+    padding-bottom: calc((48px - 16px) / 2);
+    padding-left: 45px;
+    padding-right: 45px; }
+  .section_newsletter label {
+    font-size: 12px; } }
 
 @media (min-width: 1000px) {
   .newsletter_article,
@@ -598,7 +639,7 @@ input::-webkit-input-placeholder {
   margin-right: 31px; }
 
 .other_works-date {
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700; }
 
 .other_works-link {
@@ -608,6 +649,10 @@ input::-webkit-input-placeholder {
   .other_works-link {
     flex-wrap: nowrap;
     align-items: center; } }
+
+@media (min-width: 300px) {
+  .other_works-date {
+    font-size: 12px; } }
 
 @media (min-width: 1000px) {
   .other_works {
