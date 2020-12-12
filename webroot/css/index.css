@@ -501,11 +501,10 @@ input::-webkit-input-placeholder {
   flex-direction: row;
   column-gap: 9px;
   overflow: hidden;
-  flex-basis: fill;
-  padding-top: 8px; }
+  flex-basis: fill; }
 
 .small-image,
-.image-active {
+.active-picture img {
   border-radius: 5px; }
 
 .small-image {
@@ -528,7 +527,7 @@ input::-webkit-input-placeholder {
 .next {
   position: absolute;
   top: 40%;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 16px;
   border-radius: 5px; }
 
