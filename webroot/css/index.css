@@ -352,17 +352,14 @@ body > [type="checkbox"]:checked ~ header .menu {
 .breadcrumb-link {
   display: flex;
   align-items: center;
-  color: rgba(0, 0, 0, 0.5);
-  padding-left: calc(14px + 10px); }
+  color: rgba(0, 0, 0, 0.5); }
 
 .breadcrumb-link::before {
   content: "";
   background-image: url("../images/icon_arrow_left.svg");
   display: block;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: 10px;
   width: 14px;
   height: 8px; }
 

@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   color: $common-font-color;
-  padding-left: calc(14px + 10px);
 }
 
 .breadcrumb-link::before {
@@ -17,9 +16,7 @@
   background-image: url("#{$image-path}icon_arrow_left.svg");
   display: block;
   background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
+  margin-right: 10px;
   width: 14px;
   height: 8px;
 }
