@@ -4,14 +4,14 @@
   position: relative;
 }
 
-.show-menu,
-.navigation_list {
+.show-menu {
   position: absolute;
 }
 
 .navigation_list {
-  top: 0;
-  right: 0;
+  display: none;
+  top: -37px;
+  right: -14px;
   line-height: 24px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -19,18 +19,16 @@
   padding-bottom: 1rem;
   background-color: #2b0ba0;
   border-bottom-left-radius: 24px;
-  transform: translate(12%, -250%);
-  transition: transform 0.2s;
   max-width: 400px;
 }
 
 .navigation_list-item {
   font-weight: $font-bold;
-  border-block-end: 1px solid #FFFFFF;
+  border-block-end: 1px solid #ffffff;
 }
 
 .navigation_link {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .navigation_list-item:hover {
@@ -57,11 +55,8 @@
 
 // When the icon is clicked, the menu will appear
 body > [type="checkbox"]:checked ~ header .navigation_list {
-    position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(12%, -35%);
-    transition: transform 0.2s;
+  display: block;
+  position: absolute;
 }
 
 body > [type="checkbox"]:checked ~ header .menu {
@@ -75,10 +70,9 @@ body > [type="checkbox"]:checked ~ header .menu {
 }
 
 // Menu for the medium device and desktop
-@media (min-width: $break-point-medium),
-       (min-width: $break-point-large) {
-
-  .navigation_list {
+@media (min-width: $break-point-medium), (min-width: $break-point-large) {
+  .navigation_list,
+  body > [type="checkbox"]:checked ~ header .navigation_list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,5 +98,4 @@ body > [type="checkbox"]:checked ~ header .menu {
   .menu {
     display: none;
   }
-
 }

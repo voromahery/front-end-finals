@@ -64,20 +64,6 @@
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
-  
-// @media (min-width: 300px) {
-//   .prev,
-//   .next {
-//     top: 30%;
-//   }
-// }
-
-// @media (min-width: 600px) {
-//   .prev,
-//   .next {
-//     top: 40%;
-//   }
-// }
 
 // For desktop.
 @media (min-width: $break-point-large) {
@@ -89,12 +75,6 @@
   .small-image {
     max-width: 100%;
   }
-
-  // .image-active,
-  // .details_content-figure-picture {
-  //   max-width: 1170px;
-  //   max-height: 728px;
-  // }
 
   .image_list {
     column-gap: 10.5px;

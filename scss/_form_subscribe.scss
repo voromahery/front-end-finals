@@ -1,7 +1,7 @@
 @import "./variable";
 
 .email_input {
-  border: 1px solid #DADADA;
+  border: 1px solid #dadada;
   padding-top: 16px;
   padding-bottom: 16px;
   margin-top: 16px;
@@ -14,15 +14,14 @@ input::-webkit-input-placeholder {
 }
 
 .submit_button {
-  background-color: #434CCC;
-  color: #FFFFFF;
+  background-color: #434ccc;
+  color: #ffffff;
   font-size: 16px;
   padding-top: calc((48px - 16px) / 2);
   padding-bottom: calc((48px - 16px) / 2);
   padding-left: 45px;
   padding-right: 45px;
   border: none;
-  max-height: 48px;
   max-width: 100%;
 }
 
@@ -50,10 +49,16 @@ input::-webkit-input-placeholder {
 
 // For desktop
 @media (min-width: $break-point-large) {
+  .newsletter_article,
+  .section_newsletter form {
+    gap: 16px;
+  }
+
   .section_newsletter form {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
     // 346px is the width of the input, 170px is the widt of the button and 54px is the space between them
     width: calc(346px + 54px + 170px);
   }
@@ -64,6 +69,6 @@ input::-webkit-input-placeholder {
   }
 
   .submit_button {
-    margin-top: 30px;
+    margin-top: 45px;
   }
 }

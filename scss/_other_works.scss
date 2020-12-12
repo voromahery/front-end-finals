@@ -3,6 +3,7 @@
 .other_works {
   padding-top: calc(78px - 13px);
   padding-bottom: calc(70px - 13px);
+  align-self: flex-start;
 }
 
 .other_works-list-item {
@@ -33,6 +34,7 @@
 @media (min-width: 250px) {
   .other_works-link {
     flex-wrap: nowrap;
+    align-items: center;
   }
 }
 
@@ -42,6 +44,7 @@
     max-width: 370px;
     padding-right: 135px;
     flex-basis: 35%;
+    padding-top: 0;
   }
 
   .other_works-list-item:nth-of-type(1) {

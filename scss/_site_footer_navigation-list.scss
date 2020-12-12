@@ -1,5 +1,9 @@
 @import "./variable";
 
+.site_footer_navigation-list {
+  align-self: flex-start;
+}
+
 .site_footer_navigation-list-item .active {
   font-weight: $font-bold;
   padding-bottom: 20px;
