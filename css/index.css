@@ -160,6 +160,11 @@ section {
 .navigation_link:hover {
   color: chartreuse; }
 
+.navigation_list-item,
+.navigation_list-item:hover,
+.navigation_link:hover {
+  transition: all ease-in .2s; }
+
 .menu {
   background-image: url("../images/icon_menu.svg");
   width: 20px;
