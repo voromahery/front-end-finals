@@ -654,7 +654,8 @@ input:-moz-placeholder {
 
 @media (min-width: 1000px) {
   .site_footer_navigation-list {
-    flex-basis: 20%; } }
+    padding-right: 135px;
+    padding-left: 135px; } }
 
 .other_works {
   padding-top: calc(78px - 13px);
@@ -695,7 +696,7 @@ input:-moz-placeholder {
   .other_works {
     max-width: 370px;
     padding-right: 135px;
-    flex-basis: 35%;
+    padding-left: 135px;
     padding-top: 0; }
   .other_works-list-item:nth-of-type(1) {
     padding-top: 0;
