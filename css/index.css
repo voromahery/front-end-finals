@@ -406,7 +406,9 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .photo_information-list-item {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-top: 8px;
+  margin-bottom: 8px; }
 
 .information-detail {
   font-weight: 700; }
@@ -416,7 +418,10 @@ body > [type="checkbox"]:checked ~ header .menu {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     flex-basis: 51%;
-    line-height: 24px; } }
+    line-height: 24px; }
+  .photo_information-list-item {
+    margin-top: 0;
+    margin-bottom: 0; } }
 
 .summary_article-heading {
   font-size: 40px;
