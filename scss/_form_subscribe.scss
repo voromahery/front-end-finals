@@ -9,7 +9,9 @@
   max-width: 346px;
 }
 
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-moz-placeholder {
   padding-left: 16px;
 }
 
