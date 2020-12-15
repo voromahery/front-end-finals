@@ -13,15 +13,13 @@ This site is built with [Sass](https://sass-lang.com/). This is suitable for pho
 
 We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
 
-1. `npm i`
+- `npm i`
 
 To compile the **Sass**, run the command below:
 
-1. `npm run scss:watch`
+- `npm run scss:watch`
 
 Tip: All your Sass files will be output to the `webroot/css` folder.
-
-## Getting started
 
 ### Design
 
