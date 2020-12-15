@@ -38,10 +38,12 @@
 .navigation_link:hover {
   color: chartreuse;
 }
+
+.navigation_link,
 .navigation_list-item,
 .navigation_list-item:hover,
-.navigation_link:hover{
-  transition: all ease-in .2s;
+.navigation_link:hover {
+  transition: all ease-in 0.2s;
 }
 
 .menu {

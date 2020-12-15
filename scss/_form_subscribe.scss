@@ -31,6 +31,11 @@ input::-webkit-input-placeholder {
 }
 
 .submit_button,
+.submit_button:hover {
+  transition: all ease-in 0.2s;
+}
+
+.submit_button,
 .email_input {
   border-radius: 5px;
 }
@@ -48,11 +53,11 @@ input::-webkit-input-placeholder {
 }
 
 @media (min-width: 300px) {
-    .email_input {
-      padding-top: 16px;
-      padding-bottom: 16px;
-      margin-top: 16px;
-      margin-bottom: 16px;
+  .email_input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .submit_button {
