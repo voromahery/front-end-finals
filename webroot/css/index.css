@@ -534,6 +534,9 @@ input::-webkit-input-placeholder {
   padding-top: calc(82px - 32px);
   padding-bottom: calc(92px - 32px); }
 
+.row::-webkit-scrollbar {
+  display: none; }
+
 .image-active,
 .details_content-figure-picture {
   max-width: 100%; }
@@ -542,7 +545,7 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-direction: row;
   column-gap: 9px;
-  overflow: hidden;
+  overflow: auto;
   flex-basis: fill; }
 
 .small-image,
