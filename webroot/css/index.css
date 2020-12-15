@@ -351,6 +351,10 @@ body > [type="checkbox"]:checked ~ header .menu {
 .share_link-list .list_item-link:hover {
   opacity: 0.5; }
 
+.share_link-list .list_item-link,
+.share_link-list .list_item-link:hover {
+  transition: all ease-in .2s; }
+
 .facebook_icon {
   background-image: url("../images/icon_facebook.svg");
   width: 9px;
