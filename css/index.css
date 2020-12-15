@@ -160,10 +160,11 @@ section {
 .navigation_link:hover {
   color: chartreuse; }
 
+.navigation_link,
 .navigation_list-item,
 .navigation_list-item:hover,
 .navigation_link:hover {
-  transition: all ease-in .2s; }
+  transition: all ease-in 0.2s; }
 
 .menu {
   background-image: url("../images/icon_menu.svg");
@@ -495,6 +496,10 @@ input::-webkit-input-placeholder {
   box-shadow: 1px 1px 3px #000000; }
 
 .submit_button,
+.submit_button:hover {
+  transition: all ease-in 0.2s; }
+
+.submit_button,
 .email_input {
   border-radius: 5px; }
 
@@ -632,6 +637,10 @@ input::-webkit-input-placeholder {
 .site_footer_navigation-list-item > .list_item-link:hover {
   color: #000000;
   font-weight: 700; }
+
+.site_footer_navigation-list-item > .list_item-link,
+.site_footer_navigation-list-item > .list_item-link:hover {
+  transition: all ease-in 0.2s; }
 
 @media (min-width: 1000px) {
   .site_footer_navigation-list {
