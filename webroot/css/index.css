@@ -556,6 +556,10 @@ input::-webkit-input-placeholder {
 .row::-webkit-scrollbar {
   display: none; }
 
+.row {
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none; }
+
 .image-active,
 .details_content-figure-picture {
   max-width: 100%; }
