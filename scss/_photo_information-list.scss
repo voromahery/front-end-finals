@@ -3,6 +3,8 @@
 .photo_information-list-item {
   display: flex;
   flex-direction: column;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .information-detail {
@@ -15,5 +17,9 @@
     gap: 40px;
     flex-basis: 51%;
     line-height: 24px;
+  }
+  .photo_information-list-item {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
