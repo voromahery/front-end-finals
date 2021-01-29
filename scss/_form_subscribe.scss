@@ -56,16 +56,12 @@ input:-moz-placeholder {
 
 @media (min-width: 300px) {
   .email_input {
-    padding-top: 16px;
-    padding-bottom: 16px;
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
   .submit_button {
     font-size: 16px;
-    padding-top: calc((48px - 16px) / 2);
-    padding-bottom: calc((48px - 16px) / 2);
     padding-left: 45px;
     padding-right: 45px;
   }
@@ -97,6 +93,6 @@ input:-moz-placeholder {
   }
 
   .submit_button {
-    margin-top: 45px;
+    margin-top: 46.97px;
   }
 }
