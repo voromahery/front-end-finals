@@ -479,7 +479,8 @@ body > [type="checkbox"]:checked ~ header .menu {
   padding-bottom: calc(16px / 2);
   margin-top: calc(16px / 2);
   margin-bottom: calc(16px / 2);
-  max-width: 346px; }
+  max-width: 346px;
+  padding-left: 8px; }
 
 input::-webkit-input-placeholder,
 input::-moz-placeholder,
@@ -522,7 +523,8 @@ input:-moz-placeholder {
 @media (min-width: 300px) {
   .email_input {
     margin-top: 16px;
-    margin-bottom: 16px; }
+    margin-bottom: 16px;
+    padding-left: 16px; }
   .submit_button {
     font-size: 16px;
     padding-left: 45px;
