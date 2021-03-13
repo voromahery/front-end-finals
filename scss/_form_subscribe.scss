@@ -7,6 +7,7 @@
   margin-top: calc(16px / 2);
   margin-bottom: calc(16px / 2);
   max-width: 346px;
+  padding-left: 8px;
 }
 
 input::-webkit-input-placeholder,
@@ -58,6 +59,7 @@ input:-moz-placeholder {
   .email_input {
     margin-top: 16px;
     margin-bottom: 16px;
+    padding-left: 16px;
   }
 
   .submit_button {
