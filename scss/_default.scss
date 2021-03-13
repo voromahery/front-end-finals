@@ -39,13 +39,13 @@ time {
 }
 
 section {
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-left: $padding-mobile-left;
+  padding-right: $padding-mobile-right;
 }
 
 @media (min-width: $break-point-large) {
   section {
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-left: $padding-desktop-left;
+    padding-right: $padding-desktop-right;
   }
 }

@@ -16,8 +16,8 @@
     display: flex;
     place-content: space-between;
     flex-basis: 100%;
-    padding-left: 135px;
-    padding-right: 135px;
+    padding-left: $padding-desktop-left;
+    padding-right: $padding-desktop-right;
   }
 
   .information {

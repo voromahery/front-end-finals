@@ -217,7 +217,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .section_details-content {
   padding-top: 31px;
-  padding-right: 14; }
+  padding-right: 14px; }
 
 .image_list,
 .photo_information-list {

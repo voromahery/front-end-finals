@@ -2,7 +2,7 @@
 
 .section_details-content {
   padding-top: 31px;
-  padding-right: 14;
+  padding-right: $padding-mobile-right;
 }
 
 // .details_content-figure,
@@ -27,6 +27,6 @@
 }
 
   .section_details-content {
-    padding-right: 135px;
+    padding-right: $padding-desktop-right;
   }
 }
