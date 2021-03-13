@@ -12,6 +12,7 @@
   display: none;
   top: -37px;
   right: -14px;
+  z-index: 2;
   line-height: 24px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -71,6 +72,7 @@ body > [type="checkbox"]:checked ~ header .menu {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
   background-color: rgba(5, 5, 5, 0.5);
   width: 100vw;
   height: 100vh;

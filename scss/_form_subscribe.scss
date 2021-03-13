@@ -51,8 +51,27 @@ input:-moz-placeholder {
 .section_newsletter label {
   display: flex;
   flex-direction: column;
+  line-height: 16px;
   font-size: 10px;
   text-transform: uppercase;
+}
+
+::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+::-moz-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 300px) {
@@ -70,6 +89,18 @@ input:-moz-placeholder {
 
   .section_newsletter label {
     font-size: 12px;
+  }
+
+  ::placeholder {
+    font-size: 16px;
+  }
+  
+  ::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  
+  ::-moz-placeholder {
+    font-size: 16px;
   }
 }
 

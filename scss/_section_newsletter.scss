@@ -8,23 +8,26 @@
 
 .article_header-link {
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.3em;
 }
 
 .newsletter_article-title {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
 }
 
 @media (min-width: 300px) {
   .article_header-link {
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .newsletter_article-title {
-    font-size: 38px;
+    font-size: 40px;
   }
 }
 

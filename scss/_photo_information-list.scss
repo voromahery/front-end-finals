@@ -16,8 +16,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
     flex-basis: 51%;
+  }
+
+  .photo_information-list * {
     line-height: 24px;
   }
+
   .photo_information-list-item {
     margin-top: 0;
     margin-bottom: 0;
