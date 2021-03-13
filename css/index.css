@@ -138,6 +138,7 @@ section {
   display: none;
   top: -37px;
   right: -14px;
+  z-index: 2;
   line-height: 24px;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -187,6 +188,7 @@ body > [type="checkbox"]:checked ~ header .menu {
   position: fixed;
   top: 0;
   right: 0;
+  z-index: 1;
   background-color: rgba(5, 5, 5, 0.5);
   width: 100vw;
   height: 100vh; }
@@ -241,19 +243,22 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .article_header-link {
   color: #000000;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  line-height: 24px;
+  letter-spacing: 0.3em; }
 
 .newsletter_article-title {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px; }
 
 @media (min-width: 300px) {
   .article_header-link {
-    font-size: 14px; }
+    font-size: 16px;
+    line-height: 24px; }
   .newsletter_article-title {
-    font-size: 38px; } }
+    font-size: 40px; } }
 
 @media (min-width: 1200px) {
   .section_newsletter {
@@ -371,7 +376,8 @@ body > [type="checkbox"]:checked ~ header .menu {
   height: 18px; }
 
 .details_content-breadcrumb {
-  position: relative; }
+  position: relative;
+  max-width: max-content; }
 
 .breadcrumb-link {
   display: flex;
@@ -422,7 +428,8 @@ body > [type="checkbox"]:checked ~ header .menu {
   .photo_information-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    flex-basis: 51%;
+    flex-basis: 51%; }
+  .photo_information-list * {
     line-height: 24px; }
   .photo_information-list-item {
     margin-top: 0;
@@ -438,7 +445,9 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .summary_article-header-paragraph {
   line-height: 24px;
-  padding-top: 31px; }
+  padding-top: 31px;
+  font-size: 16px;
+  font-weight: 400; }
 
 .summary_article-paragraph,
 .summary_article-header-paragraph {
@@ -455,10 +464,20 @@ body > [type="checkbox"]:checked ~ header .menu {
 .details_content-figure {
   margin: 0; }
 
+.summary_article-paragraph {
+  font-size: 12px;
+  line-height: 20px; }
+
 @media (min-width: 300px) {
   .summary_article-heading {
     font-size: 40px;
-    line-height: 48px; } }
+    line-height: 48px; }
+  .summary_article-header-paragraph {
+    font-size: 18px;
+    line-height: 32px; }
+  .summary_article-paragraph {
+    font-size: 16px;
+    line-height: 24px; } }
 
 @media (min-width: 1200px) {
   .details_content-summary-article {
@@ -517,8 +536,24 @@ input:-moz-placeholder {
 .section_newsletter label {
   display: flex;
   flex-direction: column;
+  line-height: 16px;
   font-size: 10px;
   text-transform: uppercase; }
+
+::placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5); }
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5); }
+
+::-moz-placeholder {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5); }
 
 @media (min-width: 300px) {
   .email_input {
@@ -530,7 +565,13 @@ input:-moz-placeholder {
     padding-left: 45px;
     padding-right: 45px; }
   .section_newsletter label {
-    font-size: 12px; } }
+    font-size: 12px; }
+  ::placeholder {
+    font-size: 16px; }
+  ::-webkit-input-placeholder {
+    font-size: 16px; }
+  ::-moz-placeholder {
+    font-size: 16px; } }
 
 @media (min-width: 1200px) {
   .newsletter_article,
@@ -665,7 +706,9 @@ input:-moz-placeholder {
   padding-top: 13px; }
 
 .other_works-details {
-  flex-direction: column; }
+  flex-direction: column;
+  font-size: 14px;
+  line-height: 24px; }
 
 .other_works-image {
   max-width: 70px;
@@ -676,7 +719,8 @@ input:-moz-placeholder {
 
 .other_works-date {
   font-size: 10px;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 24px; }
 
 .other_works-link {
   flex-wrap: wrap; }
@@ -687,8 +731,12 @@ input:-moz-placeholder {
     align-items: center; } }
 
 @media (min-width: 300px) {
+  .other_works-details {
+    font-size: 16px; }
   .other_works-date {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .other_works-image {
+    height: 48px; } }
 
 @media (min-width: 1200px) {
   .other_works {
