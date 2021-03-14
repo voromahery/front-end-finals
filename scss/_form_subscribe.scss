@@ -49,8 +49,6 @@ input:-moz-placeholder {
 }
 
 .section_newsletter label {
-  display: flex;
-  flex-direction: column;
   line-height: 16px;
   font-size: 10px;
   text-transform: uppercase;
@@ -75,16 +73,17 @@ input:-moz-placeholder {
 }
 
 @media (min-width: 300px) {
-  .email_input {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    padding-left: 16px;
-  }
-
   .submit_button {
     font-size: 16px;
     padding-left: 45px;
     padding-right: 45px;
+  }
+
+  .form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 16px;
   }
 
   .section_newsletter label {
@@ -94,11 +93,11 @@ input:-moz-placeholder {
   ::placeholder {
     font-size: 16px;
   }
-  
+
   ::-webkit-input-placeholder {
     font-size: 16px;
   }
-  
+
   ::-moz-placeholder {
     font-size: 16px;
   }
@@ -111,13 +110,10 @@ input:-moz-placeholder {
     gap: 16px;
   }
 
-  .section_newsletter form {
+  .newsletter_article {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    // 346px is the width of the input, 170px is the widt of the button and 54px is the space between them
-    width: calc(346px + 54px + 170px);
   }
 
   .email_input {
@@ -125,7 +121,10 @@ input:-moz-placeholder {
     width: 346px;
   }
 
-  .submit_button {
-    margin-top: 46.97px;
+  .form__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 54px;
   }
 }
