@@ -521,8 +521,7 @@ input:-moz-placeholder {
   max-width: 100%; }
 
 .submit_button:hover {
-  background-color: #1e27a7;
-  box-shadow: 1px 1px 3px #000000; }
+  background-color: #1e27a7; }
 
 .submit_button,
 .submit_button:hover {
