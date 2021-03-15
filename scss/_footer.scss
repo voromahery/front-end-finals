@@ -56,7 +56,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 300px) {
+@media (min-width: $break-point-small) {
   .site_footer-title {
     font-size: 24px;
   }

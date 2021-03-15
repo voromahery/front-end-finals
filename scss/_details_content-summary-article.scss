@@ -40,7 +40,7 @@
   line-height: 20px;
 }
 
-@media (min-width: 300px) {
+@media (min-width: $break-point-small) {
   .summary_article-heading {
     font-size: 40px;
     line-height: 48px;

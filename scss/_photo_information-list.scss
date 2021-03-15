@@ -11,7 +11,7 @@
   font-weight: $font-bold;
 }
 
-@media (min-width: 300px) {
+@media (min-width: $break-point-small) {
   .photo_information-list {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;

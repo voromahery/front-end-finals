@@ -42,7 +42,7 @@
   }
 }
 
-@media (min-width: 300px) {
+@media (min-width: $break-point-small) {
   .other_works-details {
     font-size: 16px;
   }
