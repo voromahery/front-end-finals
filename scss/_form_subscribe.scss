@@ -34,7 +34,7 @@ input:-moz-placeholder {
 
 .submit_button,
 .submit_button:hover {
-  transition: all ease-in 0.2s;
+  transition: $fast-transition;
 }
 
 .submit_button,

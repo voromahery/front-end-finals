@@ -62,19 +62,24 @@
   color: #ffffff;
   padding: 16px;
   border-radius: 5px;
-  transition: all ease-in 0.2s;
+  transition: all -in 0.2s;
 }
 
 .active,
 .demo:hover {
   opacity: 1;
-  transition: all ease-in 0.2s;
 }
 
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-  transition: all ease-in 0.2s;
+}
+
+.prev:hover,
+.next:hover,
+.active,
+.demo:hover {
+  transition: $fast-transition;
 }
 
 .image_wrapper:hover .prev,

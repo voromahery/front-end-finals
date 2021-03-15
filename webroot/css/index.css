@@ -361,7 +361,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 
 .share_link-list .list_item-link,
 .share_link-list .list_item-link:hover {
-  transition: all ease-in .2s; }
+  transition: all ease-in 0.2s; }
 
 .facebook_icon {
   background-image: url("../images/icon_facebook.svg");
@@ -642,16 +642,20 @@ input:-moz-placeholder {
   color: #ffffff;
   padding: 16px;
   border-radius: 5px;
-  transition: all ease-in 0.2s; }
+  transition: all -in 0.2s; }
 
 .active,
 .demo:hover {
-  opacity: 1;
-  transition: all ease-in 0.2s; }
+  opacity: 1; }
 
 .prev:hover,
 .next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.prev:hover,
+.next:hover,
+.active,
+.demo:hover {
   transition: all ease-in 0.2s; }
 
 .image_wrapper:hover .prev,

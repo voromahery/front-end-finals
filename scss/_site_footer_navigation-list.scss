@@ -19,7 +19,7 @@
 
 .site_footer_navigation-list-item > .list_item-link,
 .site_footer_navigation-list-item > .list_item-link:hover {
-  transition: all ease-in 0.2s;
+  transition: $fast-transition;
 }
 
 // For desktop

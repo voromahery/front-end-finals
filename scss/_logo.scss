@@ -19,7 +19,7 @@
 
 .share_link-list .list_item-link,
 .share_link-list .list_item-link:hover{
-  transition: all ease-in .2s;
+  transition: $fast-transition;
 }
 
 .facebook_icon {

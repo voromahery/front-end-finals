@@ -1,6 +1,9 @@
+// Transition
+$fast-transition: all ease-in 0.2s;
+
+// Paddings
 $padding-mobile-left: 14px;
 $padding-mobile-right: 14px;
-
 $padding-desktop-right: 135px;
 $padding-desktop-left: 135px;
 
@@ -11,14 +14,13 @@ $common-font-color: rgba(0, 0, 0, 0.5);
 $font-regular: 400;
 $font-medium: 500;
 $font-bold: 700;
+
 // Font-name
 $dm-sans: "dm_sans";
 $dm-serif: "dm_serif_display";
 
-// Font path
+// Paths
 $font-path: "../fonts";
-
-// image path
 $image-path: "../images/";
 
 // For different devices

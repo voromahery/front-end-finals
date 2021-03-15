@@ -44,7 +44,7 @@
 .navigation_list-item,
 .navigation_list-item:hover,
 .navigation_link:hover {
-  transition: all ease-in 0.2s;
+  transition:$fast-transition;
 }
 
 .menu {
