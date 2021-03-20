@@ -8,6 +8,7 @@
   margin-bottom: calc(16px / 2);
   max-width: 346px;
   padding-left: 8px;
+  width: calc(100% - 8px);
 }
 
 input::-webkit-input-placeholder,
@@ -87,6 +88,7 @@ input:-moz-placeholder {
 
   .email_input {
     padding-left: 16px;
+    width: calc(100% - 16px);
   }
 
   .section_newsletter label {
