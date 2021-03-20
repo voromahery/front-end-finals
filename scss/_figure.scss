@@ -56,7 +56,7 @@
 
 .prev,
 .next {
-  display: none;
+  opacity: 0;
   position: absolute;
   top: 40%;
   color: #ffffff;
@@ -77,6 +77,8 @@
 
 .prev:hover,
 .next:hover,
+.next,
+.prev,
 .active,
 .demo:hover {
   transition: $fast-transition;
@@ -84,7 +86,7 @@
 
 .image_wrapper:hover .prev,
 .image_wrapper:hover .next {
-  display: block;
+  opacity: 1;
 }
 // For desktop.
 @media (min-width: $break-point-large) {
