@@ -64,7 +64,7 @@ body {
   background: rgba(67, 76, 204, 0.05); }
 
 .section_container {
-  max-width: 1440px;
+  max-width: 1140px;
   margin: auto; }
 
 * {
@@ -106,14 +106,16 @@ section {
     padding-right: 135px; } }
 
 .masthead {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #434CCC;
   padding-top: 16px;
   padding-bottom: 16px;
   padding-left: 14px;
   padding-right: 14px; }
+
+.masthead__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
 
 .masthead_heading {
   margin: 0; }
