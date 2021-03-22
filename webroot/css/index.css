@@ -61,8 +61,11 @@
 body {
   font-family: "DM Sans", "MyDM-Sans", Arial, Helvetica, sans-serif;
   margin: auto;
-  max-width: 1440px;
   background: rgba(67, 76, 204, 0.05); }
+
+.section_container {
+  max-width: 1440px;
+  margin: auto; }
 
 * {
   line-height: 32px; }
@@ -143,8 +146,7 @@ section {
   right: -14px;
   z-index: 2;
   line-height: 24px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 16px;
   background-color: #2b0ba0;
   border-bottom-left-radius: 24px;
   max-width: 400px; }
@@ -274,7 +276,7 @@ body > [type="checkbox"]:checked ~ header .menu {
     font-size: 52px;
     line-height: 64px; } }
 
-.site_footer {
+.footer {
   background: #ffffff; }
 
 .site_footer-about,
@@ -324,6 +326,9 @@ body > [type="checkbox"]:checked ~ header .menu {
     font-size: 24px; } }
 
 @media (min-width: 1200px) {
+  .footer__wrapper {
+    padding-left: 135px;
+    padding-right: 135px; }
   .site_footer {
     display: flex;
     flex-wrap: wrap;
@@ -461,8 +466,7 @@ body > [type="checkbox"]:checked ~ header .menu {
 .summary_article-heading,
 .summary_article-header-paragraph,
 .summary_article-paragraph,
-.details_content-breadcrumb,
-.details_content-figure {
+.details_content-breadcrumb {
   margin: 0; }
 
 .summary_article-paragraph {
@@ -685,8 +689,7 @@ input:-moz-placeholder {
 
 @media (min-width: 1200px) {
   .site_footer-about {
-    flex-basis: 20%;
-    padding-left: 135px; } }
+    flex-basis: 20%; } }
 
 .site_footer_navigation-list {
   align-self: flex-start; }
@@ -704,11 +707,6 @@ input:-moz-placeholder {
 .site_footer_navigation-list-item > .list_item-link,
 .site_footer_navigation-list-item > .list_item-link:hover {
   transition: all ease-in 0.2s; }
-
-@media (min-width: 1200px) {
-  .site_footer_navigation-list {
-    padding-right: 135px;
-    padding-left: 135px; } }
 
 .other_works {
   padding-top: calc(78px - 13px);
@@ -755,8 +753,6 @@ input:-moz-placeholder {
 @media (min-width: 1200px) {
   .other_works {
     max-width: 370px;
-    padding-right: 135px;
-    padding-left: 135px;
     padding-top: 0; }
   .other_works-list-item:nth-of-type(1) {
     padding-top: 0;
@@ -766,9 +762,18 @@ input:-moz-placeholder {
     padding-top: calc(39px / 2); } }
 
 .page-information {
-  border-block-start: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
   padding-top: 27px;
   padding-bottom: 29px; }
+
+.page-information::before {
+  content: "";
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .information:nth-of-type(2) {
   padding-top: 7px; }

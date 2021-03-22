@@ -1,7 +1,7 @@
 @import "./variable";
 
 // Common footer style
-.site_footer {
+.footer {
   background: #ffffff;
 }
 
@@ -65,6 +65,12 @@
 // For desktop
 @media (min-width: $break-point-large) {
   // Common footer style
+
+  .footer__wrapper {
+    padding-left: $padding-desktop-left;
+    padding-right: $padding-desktop-left;
+  }
+
   .site_footer {
     display: flex;
     flex-wrap: wrap;

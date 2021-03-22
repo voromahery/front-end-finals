@@ -1,9 +1,19 @@
 @import "./variable";
 
 .page-information {
-  border-block-start: 1px solid hsla(0, 0, 0, 0.1);
-  padding-top:27px;
+  position: relative;
+  padding-top: 27px;
   padding-bottom: 29px;
+}
+
+.page-information::before {
+  content: "";
+  border-top: 1px solid hsla(0, 0, 0, 0.1);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .information:nth-of-type(2) {

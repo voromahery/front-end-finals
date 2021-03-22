@@ -4,8 +4,12 @@
 body {
   font-family: "DM Sans", "MyDM-Sans", Arial, Helvetica, sans-serif;
   margin: auto;
-  max-width: 1440px;
   background: rgba(67, 76, 204, 0.05);
+}
+
+.section_container {
+  max-width: 1440px;
+  margin: auto;
 }
 
 * {
