@@ -328,7 +328,7 @@ body > [type="checkbox"]:checked ~ header .menu {
     font-size: 24px; } }
 
 @media (min-width: 1200px) {
-  .footer__wrapper {
+  .footer_wrapper {
     padding-left: 135px;
     padding-right: 135px; }
   .site_footer {
@@ -565,7 +565,7 @@ input:-moz-placeholder {
     font-size: 16px;
     padding-left: 45px;
     padding-right: 45px; }
-  .form__wrapper {
+  .form_wrapper {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -593,7 +593,7 @@ input:-moz-placeholder {
   .email_input {
     margin-bottom: 0;
     width: 346px; }
-  .form__wrapper {
+  .form_wrapper {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -685,7 +685,7 @@ input:-moz-placeholder {
     align-items: flex-end;
     grid-column: 1; } }
 
-.website-information {
+.website_information {
   padding-top: 22px;
   padding-bottom: 29px; }
 
@@ -763,12 +763,12 @@ input:-moz-placeholder {
     padding-bottom: 0;
     padding-top: calc(39px / 2); } }
 
-.page-information {
+.page_information {
   position: relative;
   padding-top: 27px;
   padding-bottom: 29px; }
 
-.page-information::before {
+.page_information::before {
   content: "";
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: block;
@@ -781,7 +781,7 @@ input:-moz-placeholder {
   padding-top: 7px; }
 
 @media (min-width: 1200px) {
-  .page-information {
+  .page_information-wrapper {
     display: flex;
     place-content: space-between;
     flex-basis: 100%;
