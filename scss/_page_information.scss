@@ -1,12 +1,12 @@
 @import "./variable";
 
-.page-information {
+.page_information {
   position: relative;
   padding-top: 27px;
   padding-bottom: 29px;
 }
 
-.page-information::before {
+.page_information::before {
   content: "";
   border-top: 1px solid hsla(0, 0, 0, 0.1);
   display: block;
@@ -22,7 +22,7 @@
 
 // For desktop
 @media (min-width: $break-point-large) {
-  .page-information {
+  .page_information-wrapper {
     display: flex;
     place-content: space-between;
     flex-basis: 100%;
