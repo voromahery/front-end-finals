@@ -29,8 +29,6 @@
 
 ![home](./source_materials/photograph.webp);
 
-- Click this link to see my app [Photograf](https://voromahery.github.io/photograf/)
-
 ## [Acknowledgements](#acknowledgements)
 A responsive website using Sass and HTML5 in order to practice Sass.
 
