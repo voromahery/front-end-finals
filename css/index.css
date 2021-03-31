@@ -143,8 +143,8 @@ section {
 
 .navigation_list {
   display: none;
-  top: -37px;
-  right: -14px;
+  top: 0;
+  right: 0;
   z-index: 2;
   line-height: 24px;
   padding: 16px;
@@ -184,14 +184,16 @@ section {
   top: -100%; }
 
 body > [type="checkbox"]:checked ~ header .navigation_list {
-  display: block;
-  position: absolute; }
+  display: block; }
+
+body > [type="checkbox"]:checked ~ header .navigation_list,
+body > [type="checkbox"]:checked ~ header .menu {
+  position: fixed;
+  top: 0;
+  right: 0; }
 
 body > [type="checkbox"]:checked ~ header .menu {
   background-image: none;
-  position: fixed;
-  top: 0;
-  right: 0;
   z-index: 1;
   background-color: rgba(5, 5, 5, 0.5);
   width: 100vw;
