@@ -30,7 +30,7 @@
 ![home](./source_materials/photograph.webp);
 
 ## [Acknowledgements](#acknowledgements)
-A responsive website using Sass and HTML5 in order to practice Sass.
+A responsive website using Sass, HTML5 and Javascript in order to practice Sass, I created this project in 5 days.
 
 ### Built With
 - [Sass](https://sass-lang.com/)
