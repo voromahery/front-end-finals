@@ -10,11 +10,11 @@
 
 .navigation_list {
   display: none;
-  top: -37px;
-  right: -14px;
+  top: 0;
+  right: 0;
   z-index: 2;
   line-height: 24px;
- padding: 16px;
+  padding: 16px;
   background-color: #2b0ba0;
   border-bottom-left-radius: 24px;
   max-width: 400px;
@@ -41,7 +41,7 @@
 .navigation_list-item,
 .navigation_list-item:hover,
 .navigation_link:hover {
-  transition:$fast-transition;
+  transition: $fast-transition;
 }
 
 .menu {
@@ -61,14 +61,17 @@
 // When the icon is clicked, the menu will appear
 body > [type="checkbox"]:checked ~ header .navigation_list {
   display: block;
-  position: absolute;
+}
+
+body > [type="checkbox"]:checked ~ header .navigation_list,
+body > [type="checkbox"]:checked ~ header .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 body > [type="checkbox"]:checked ~ header .menu {
   background-image: none;
-  position: fixed;
-  top: 0;
-  right: 0;
   z-index: 1;
   background-color: rgba(5, 5, 5, 0.5);
   width: 100vw;
