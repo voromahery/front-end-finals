@@ -22,6 +22,15 @@
   height: 8px;
 }
 
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-link,
+.breadcrumb-link:hover {
+  transition: $fast-transition;
+}
+
 // For the header article: "details_content-header-article"
 .details_content-heading {
   font-size: 40px;
