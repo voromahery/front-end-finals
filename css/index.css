@@ -88,8 +88,7 @@ a {
 
 h1,
 h2,
-h3,
-time {
+h3 {
   font-family: "DM Serif Display", "MyDM-Serif", serif;
   font-weight: 400; }
 
@@ -400,6 +399,13 @@ body > [type="checkbox"]:checked ~ header .menu {
   margin-right: 10px;
   width: 14px;
   height: 8px; }
+
+.breadcrumb-link:hover {
+  text-decoration: underline; }
+
+.breadcrumb-link,
+.breadcrumb-link:hover {
+  transition: all ease-in 0.2s; }
 
 .details_content-heading {
   font-size: 40px;
