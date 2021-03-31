@@ -1,30 +1,68 @@
-# Photograph
+<h1 align="center">Photograf</h1>
 
-## Description
-This site is built with [Sass](https://sass-lang.com/). This is suitable for photographers who want to show their works online.
+<div align="center">
+  <h3>
+    <a href="https://voromahery.github.io/photograf/">
+      Demo
+    </a>
+    <span> | </span>
+    <a href="https://github.com/voromahery/photograf">
+      Code
+    </a>
+  </h3>
+</div>
 
-## Dependencies
+<!-- TABLE OF CONTENTS -->
 
-- Node.js
-- Figma
-- Figma Font Helper
+## Table of Contents
 
-## How to use it?
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [How to use](#how-to-use)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
+<!-- OVERVIEW -->
+
+## Overview
+
+![home](./source_materials/photograph.webp);
+
+- Click this link to see my app [Photograf](https://voromahery.github.io/photograf/)
+
+## [Acknowledgements](#acknowledgements)
+A responsive website using Sass and HTML5 in order to practice Sass.
+
+### Built With
+- [Sass](https://sass-lang.com/)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [HTML](https://html.spec.whatwg.org/)
+- [Javascript](https://www.javascript.com/)
+
+## How To Use
+
+We'll be using `node-sass` for our Sass compilation
 
 - `npm i`
 
 To compile the **Sass**, run the command below:
 
-- `npm run scss:watch`
+- `npm start`
 
-Tip: All your Sass files will be output to the `webroot/css` folder.
+```bash
+# Clone this repository
+$ git clone https://github.com/your-user-name/your-project-name
 
-### Design
+# Install dependencies
+$ npm install
 
-You can find the design:
+# Run the app
+$ npm start
+```
 
-- online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1)
-- by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
+## Contact
 
+- Email: Daniel.her@onja.org
+- Phone: +2613791472
+- GitHub [voromahery](https://github.com/voromahery/)
